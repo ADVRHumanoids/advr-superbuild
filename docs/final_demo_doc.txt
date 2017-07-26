@@ -1,0 +1,26 @@
+embedded
+=======
+
+XBotCore advr-superbuild/configs/ADVR_shared/bigman/configs/config_walkman_floating_base.yaml
+
+CommunicationHandler advr-superbuild/configs/ADVR_shared/bigman/configs/config_walkman_multisense.yaml 
+
+NRTDeployer advr-superbuild/configs/ADVR_shared/bigman/configs/config_walkman_floating_base.yaml 
+
+
+vision
+======
+
+./sync_ntp.sh
+
+roscore
+
+ ~/multisense/devel/setup.bash
+multisense
+
+cd ~/advr-superbuild/external/ADVR_ROS/launch/
+roslaunch multisense.launch
+
+# set the proper NRTPlugins
+NRTDeployer ~/advr-superbuild/configs/ADVR_shared/bigman/configs/config_walkman_floating_base.yaml
+
