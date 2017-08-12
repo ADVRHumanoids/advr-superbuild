@@ -6,7 +6,8 @@ notifications:
     recipients:
       - Luca.muratore@iit.it
       - Arturo.Laurenzi@iit.it
-      - giuseppe.rigano@iit.it 
+      - giuseppe.rigano@iit.it
+      - enrico.mingo@iit.it 
     on_success: never
     on_failure: always
 # Handle git submodules yourself
@@ -30,7 +31,7 @@ script:
 - chmod 777 ./robotology-setup.bash
 - source ./robotology-setup.bash
 - cd /
-- source opt/ros/indigo/setup.bash
+- source /opt/ros/indigo/setup.bash
 - cd -
 - pip install catkin_pkg
 - pip install empy
