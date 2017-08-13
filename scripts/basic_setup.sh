@@ -40,6 +40,6 @@ sudo pip install BeautifulSoup4 lxml
 
 
 # ROS config
-sudo apt-get install python-rosdep
+sudo apt-get -y --allow-unauthenticated install python-rosdep
 sudo rosdep init
 rosdep update
