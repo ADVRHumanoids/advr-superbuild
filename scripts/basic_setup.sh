@@ -16,9 +16,9 @@ wget http://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -
 sudo apt-get update
 
 if [ "`lsb_release -cs`" = 'trusty' ]; then
-	sudo apt-get install ros-indigo-desktop-full
-	sudo apt-get install ros-indigo-kdl-parser ros-indigo-eigen-conversions
-	sudo apt-get install ros-indigo-gazebo6-ros-pkgs
+	sudo apt-get -y --allow-unauthenticated install ros-indigo-desktop-full
+	sudo apt-get -y --allow-unauthenticated install ros-indigo-kdl-parser ros-indigo-eigen-conversions
+	sudo apt-get -y --allow-unauthenticated install ros-indigo-gazebo6-ros-pkgs
 	
 	#find a proper way to check the current cmake version
 	#if [ "`cmake --version`"  != '3.5.1' ]; then
@@ -29,16 +29,17 @@ fi
 
 if [ "`lsb_release -cs`" = 'xenial' ]; then
         sudo apt-get install ros-kinetic-desktop-full
-	sudo apt-get install ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface
+	 sudo apt-get install ros-kinetic-eigen-conversions ros-kinetic-kdl-parser ros-kinetic-effort-controllers ros-kinetic-controller-manager ros-kinetic-transmission-interface
         sudo apt-get install ros-kinetic-gazebo-ros-pkgs
 
 fi
 
 # dependency from iit-bigman-ros-package
-sudo apt-get install python-pip
+sudo apt-get -y --allow-unauthenticated install python-pip
 sudo pip install BeautifulSoup4 lxml 
 
 
 # ROS config
+sudo apt-get -y --allow-unauthenticated install python-rosdep
 sudo rosdep init
 rosdep update
