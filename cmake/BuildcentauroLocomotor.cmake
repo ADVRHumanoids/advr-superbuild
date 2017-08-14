@@ -1,14 +1,14 @@
-# centauro-simulator
+# centauroLocomotor
 include(YCMEPHelper)
 include(FindOrBuildPackage)
+find_or_build_package(XCM QUIET)
 
 ycm_ep_helper(  centauroLocomotor
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/centauroLocomotor.git
-                TAG xbot_control_devel
-                COMPONENT robots
-                DEPENDS
-                BUILD_COMMAND ""
-		INSTALL_COMMAND ""
-              )
+                TAG master
+                COMPONENT external
+                DEPENDS XCM
+                )
+
