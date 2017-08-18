@@ -49,6 +49,11 @@ find_or_build_package_with_tag(ArtificialPotentialFields OFF)
 find_or_build_package_with_tag(QPBuilder OFF)
 
 # ---------------------
+# Compile ik_twolayer
+# ---------------------
+find_or_build_package_with_tag(ik_twolayer OFF)
+
+# ---------------------
 # Compile MpcLocomotion
 # ---------------------
 find_or_build_package_with_tag(MpcLocomotion OFF)
