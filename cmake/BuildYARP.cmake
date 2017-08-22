@@ -21,13 +21,14 @@ ycm_ep_helper(  YARP
                 CMAKE_CACHE_ARGS -DCREATE_IDLS:BOOL=ON
                                  -DCREATE_SHARED_LIBRARY:BOOL=ON
                                  -DYARP_USE_SYSTEM_SQLITE:BOOL=ON
+				 #-DYARP_USE_SYSTEM_xmlrpcpp:BOOL=OFF
                                  -DCREATE_LIB_MATH:BOOL=ON
                                  -DYARP_USE_ATLAS:BOOL=OFF
                                  -DCREATE_OPTIONAL_CARRIERS:BOOL=ON
                                  -DENABLE_yarpcar_bayer_carrier:BOOL=ON
                                  -DUSE_LIBDC1394:BOOL=OFF
                                  -DENABLE_yarpcar_tcpros_carrier:BOOL=ON
-                                 -DENABLE_yarpcar_xmlrpc_carrier:BOOL=ON
+                                 -DENABLE_yarpcar_xmlrpc_carrier:BOOL=OFF
                                  -DENABLE_yarpcar_priority_carrier:BOOL=ON
                                  -DENABLE_yarpcar_bayer_carrier:BOOL=ON
                                  -DENABLE_yarpidl_thrift:BOOL=ON
@@ -40,7 +41,7 @@ ycm_ep_helper(  YARP
                                  -DYARP_CLEAN_API:BOOL=ON
                                  -DYARP_COMPILE_TESTS:BOOL=OFF
                                  -DYARP_COMPILE_EXPERIMENTAL_WRAPPERS:BOOL=ON
-                                 -DYARP_COMPILE_BINDINGS:BOOL=ON
-                                 -DCREATE_PYTHON:BOOL=ON
+                                 -DYARP_COMPILE_BINDINGS:BOOL=OFF
+                                 -DCREATE_PYTHON:BOOL=OFF
                                  -DCREATE_GUIS:BOOL=ON
                 )
