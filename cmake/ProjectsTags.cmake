@@ -2,7 +2,8 @@
 set(YCM_TAG 538bec08ad3)
 
 # Superbuild DRC CORE: put the SHA1 of the commit or the TAG, not the branch name.
-set(YARP_TAG ecd0040)
+#set(YARP_TAG ecd0040)
+set(YARP_TAG  v2.3.70)
 set(paramHelp_TAG de9f652)
 set(GazeboYARPPlugins_TAG b843248)
 set(iDynTree_TAG f0346c1)
