@@ -9,7 +9,7 @@ set(USE_WALKMAN_DEMOS_PROJECTS OFF CACHE BOOL "Enable the download and usages of
 find_or_build_package_with_tag(GazeboYARPPlugins OFF)
 
 find_or_build_package_with_tag(drc_shared OFF)
-find_or_build_package_with_tag(iit-bigman-ros-pkg OFF)
+find_or_build_package_with_tag(iit-bigman-ros-pkg ON)
 find_or_build_package_with_tag(locoman_utils OFF)
 find_or_build_package_with_tag(arms_ik OFF)
 find_or_build_package_with_tag(wholebody_ik OFF)
@@ -80,4 +80,9 @@ find_or_build_package_with_tag(ManipulationExample ON)
 # Compile sensors-description
 # --------------------------------------
 find_or_build_package_with_tag(sensors-description OFF)
+
+# --------------------------------------
+# Compile WALKMAN_shared
+# --------------------------------------
+find_or_build_package_with_tag(WALKMAN_shared ON)
 
