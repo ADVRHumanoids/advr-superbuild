@@ -81,8 +81,10 @@ set(YNL_HYDRA_TOKYO_UNIVERSITY OFF CACHE BOOL "Enable the download and usages of
 set(ADVR-CORE OFF CACHE BOOL "Enable the download and usages of ADVR core packages")
 # CENTAURO EU Project 
 set(CENTAURO_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CENTAURO project")
-# CENTAURO EU Project 
+# PHOLUS EU Project 
 set(PHOLUS OFF CACHE BOOL "Enable the download and usages of repos related to the PHOLUS project")
+# COMAN
+set(COMAN OFF CACHE BOOL "Enable the download and usages of repos related to the COMAN project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
 # DEPRECATED packages 
@@ -139,6 +141,12 @@ IF(VIGIR)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/vigir/CMakeLists.txt)
 ENDIF(VIGIR)
 
+# --------------------------------------
+# Compile related COMAN packages
+# -------------------------------------
+IF(COMAN)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/coman)
+ENDIF(COMAN)
 
 # --------------------------------------
 # Compile related WALK-MAN packages
