@@ -67,10 +67,16 @@ find_or_build_package_with_tag(QPOases OFF)
 # Compile bi-man2 
 # ---------------------
 find_or_build_package_with_tag(bi-man2 OFF)
+
 #-----------------------
 #centauroLocomotor
 #----------------------
 find_or_build_package_with_tag(centauroLocomotor OFF)
+
+#-----------------------
+# Controller
+#----------------------
+find_or_build_package_with_tag(Controller OFF)
 
 
 
