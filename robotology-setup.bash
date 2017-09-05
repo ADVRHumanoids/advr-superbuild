@@ -110,6 +110,7 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/stacks
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/icub_description
 pathadd CPATH $ROBOTOLOGY_ROOT/build/install/include
 pathadd CPATH /opt/ros/${ROS_DISTRO}/include
 pathadd PYTHONPATH $ROBOTOLOGY_ROOT/build/install/lib/python2.7/site-packages

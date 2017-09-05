@@ -32,6 +32,7 @@ ENDIF(SUPERBUILD_COMAN_INTERFACE)
 find_or_build_package_with_tag(IITComanRosPkg OFF)
 # Compile iCub model
 find_or_build_package_with_tag(icub_gazebo OFF)
+find_or_build_package_with_tag(icub_description OFF)
 # Compile Gazebo YARP plugin
 find_or_build_package_with_tag(GazeboYARPPlugins OFF)
 
