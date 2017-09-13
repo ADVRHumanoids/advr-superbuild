@@ -85,6 +85,8 @@ set(CENTAURO_EU OFF CACHE BOOL "Enable the download and usages of repos related 
 set(PHOLUS OFF CACHE BOOL "Enable the download and usages of repos related to the PHOLUS project")
 # COMAN
 set(COMAN OFF CACHE BOOL "Enable the download and usages of repos related to the COMAN project")
+# KUKA
+set(KUKA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
 # DEPRECATED packages 
@@ -147,6 +149,13 @@ ENDIF(VIGIR)
 IF(COMAN)
       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/coman)
 ENDIF(COMAN)
+
+# --------------------------------------
+# Compile related XBOTKUKA packages
+# -------------------------------------
+IF(KUKA)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkuka)
+ENDIF(KUKA)
 
 # --------------------------------------
 # Compile related WALK-MAN packages
