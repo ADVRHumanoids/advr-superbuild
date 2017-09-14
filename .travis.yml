@@ -20,6 +20,7 @@ before_install:
     #- sed -i 's/git@github.com:/https:\/\/github.com\//' .gitmodules
     #- git submodule update --init --recursive
 script: 
+- sudo apt-get install libboost-all-dev
 #config git
 - git config --global user.name "pepperig"
 - git config --global user.email "giusepperig@hotmail.it"
