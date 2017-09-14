@@ -68,6 +68,12 @@ find_or_build_package_with_tag(ADVR_shared OFF)
 # -------------------
 find_or_build_package_with_tag(advr_humanoids_common_utils OFF)
 
+# -------------------
+# Compile XBotEcat
+# -------------------
+find_or_build_package_with_tag(XBotEcat OFF)
+
+
 # ----------------
 # Compile XBotCore
 # ----------------
