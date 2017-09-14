@@ -130,6 +130,11 @@ if [ -d $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg ]; then
 	 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg/bigman_gazebo/database
 fi
 
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg
+	# pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg/kuka_gazebo/database
+fi
+
 if [ -d $ROBOTOLOGY_ROOT/robots/openth/ynl-hydra-ros-pkg ]; then
 	pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/openth/ynl-hydra-ros-pkg
 	pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/openth/ynl-hydra-ros-pkg/hydra_gazebo/database
