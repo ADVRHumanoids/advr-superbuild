@@ -78,5 +78,8 @@ find_or_build_package_with_tag(centauroLocomotor OFF)
 #----------------------
 find_or_build_package_with_tag(Controller OFF)
 
-
+# --------------------------------------
+# Compile Pholus_demo_W
+# --------------------------------------
+find_or_build_package_with_tag(Pholus_demo_W OFF)
 
