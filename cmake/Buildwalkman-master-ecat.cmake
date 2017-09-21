@@ -7,7 +7,7 @@ find_or_build_package(soem_advr QUIET)
 ycm_ep_helper(  walkman-master-ecat
                 TYPE GIT
                 STYLE GITLAB_ADVRCLOUD
-                REPOSITORY amargan/walkman-master-ecat.git
+                REPOSITORY amargan/ecat_master_advr.git
                 TAG centauro_bonn_review_2016
                 COMPONENT external
 		DEPENDS soem_advr
