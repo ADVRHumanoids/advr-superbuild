@@ -73,6 +73,11 @@ find_or_build_package_with_tag(advr_humanoids_common_utils OFF)
 # -------------------
 find_or_build_package_with_tag(XBotEcat OFF)
 
+# -------------------
+# Compile XBotEthernet
+# -------------------
+find_or_build_package_with_tag(XBotEthernet OFF)
+
 
 # ----------------
 # Compile XBotCore
