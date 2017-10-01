@@ -222,10 +222,20 @@ fi
 alias superbuild=". ${ROBOTOLOGY_ROOT}/scripts/superbuild.sh"
 source ${ROBOTOLOGY_ROOT}/scripts/superbuild.profile
 
+alias set_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/set_xbot_config.sh"
+
+
 # add robotology folder for robot models
 if [ -d $ROBOTOLOGY_ROOT/build/install/share/robots ]; then
 	export ROBOTOLOGY_ROBOTS=$ROBOTOLOGY_ROOT/build/install/share/robots
 else
 	unset ROBOTOLOGY_ROBOTS
 fi
+ 
+#export xbot config
+if [ -f $ROBOTOLOGY_ROOT/build/install/configs/active_config ]; then
+    . $ROBOTOLOGY_ROOT/build/install/configs/active_config
+fi
+
+
  
