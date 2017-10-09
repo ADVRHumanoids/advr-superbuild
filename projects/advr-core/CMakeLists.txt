@@ -84,6 +84,11 @@ find_or_build_package_with_tag(XBotEthernet OFF)
 # -------------------
 find_or_build_package_with_tag(XBotDummy OFF)
 
+# -------------------
+# Compile WebGuiDistr
+# -------------------
+find_or_build_package_with_tag(WebGUIDistr OFF)
+
 # ----------------
 # Compile XBotCore
 # ----------------
