@@ -9,5 +9,6 @@ ycm_ep_helper(  WebGUIDistr
                 TAG master
                 COMPONENT .
 		DEPENDS 
+                INSTALL_COMMAND ""
 		
             )
