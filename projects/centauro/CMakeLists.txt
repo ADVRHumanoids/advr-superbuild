@@ -78,5 +78,16 @@ find_or_build_package_with_tag(centauroLocomotor OFF)
 #----------------------
 find_or_build_package_with_tag(Controller OFF)
 
+# --------------------------------------
+# Compile Pholus_demo_W
+# --------------------------------------
+find_or_build_package_with_tag(Pholus_demo_W OFF)
+
+# --------------------------------------
+# Compile whole body keyboard control
+# --------------------------------------
+find_or_build_package_with_tag(WholeBodyKeyboardCtrl OFF)
+
+find_or_build_package_with_tag(CentauroAlexUDP OFF)
 
 

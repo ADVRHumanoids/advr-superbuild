@@ -1,16 +1,17 @@
-# XBotCore
+# XBotEthernet
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(XCM QUIET)
+find_or_build_package(COMAN_shared QUIET)
 
-ycm_ep_helper(  XBotCore
+ycm_ep_helper(  XBotEthernet
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/xbotcore.git
+                REPOSITORY ADVRHumanoids/XBotEthernet.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS 
+			COMAN_shared
 		CMAKE_CACHE_ARGS -DBUILD_SHARED_LIBS:BOOL=ON
                                  -DENABLE_XENO:BOOL=ON
 
