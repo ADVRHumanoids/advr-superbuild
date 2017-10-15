@@ -129,3 +129,10 @@ find_or_build_package_with_tag(ManipulationPlugin ON)
 # gazebo_magnetic_attach_plugin
 # --------------------------------------
 find_or_build_package_with_tag(gazebo_magnetic_attach_plugin OFF)
+
+# --------------------------------------
+# Playback_mat_with_DK
+# --------------------------------------
+find_or_build_package_with_tag(Playback_mat_with_DK OFF)
+
+
