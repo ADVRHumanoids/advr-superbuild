@@ -90,6 +90,11 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
                      pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/ros_orocos_joint_trajectory_server
 		fi
        fi
+
+       if [ -f ${ROBOTOLOGY_ROOT}/external/RobotInterfaceOROCOS/CMakeLists.txt ]; then
+              pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib
+              pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/RobotInterfaceOROCOS
+       fi
 fi
 
 #gazebo setup
