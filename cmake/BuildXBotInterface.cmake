@@ -15,4 +15,5 @@ ycm_ep_helper(  XBotInterface
                 DEPENDS XBotCoreModel
 			sharedlibpp
 			bprinter
-             )
+		CMAKE_CACHE_ARGS -DBUILD_TESTS:BOOL=false
+	     )

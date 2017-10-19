@@ -79,17 +79,24 @@ find_or_build_package_with_tag(XBotEcat OFF)
 find_or_build_package_with_tag(XBotEthernet OFF)
 
 
+# -------------------
+# Compile XBotDummy
+# -------------------
+find_or_build_package_with_tag(XBotDummy OFF)
+
+# -------------------
+# Compile WebGuiDistr
+# -------------------
+find_or_build_package_with_tag(WebGUIDistr OFF)
+
 # ----------------
 # Compile XBotCore
 # ----------------
-set(SUPERBUILD_XBotCore OFF CACHE BOOL "Flag to compile XBotCore and his dependencies: XBotCoreModel, soem_advr, walkman-master-ecat, ec_master_test")
-if(SUPERBUILD_XBotCore)
-find_or_build_package(XBotCore)
-	find_or_build_package(XBotCoreModel)
-	find_or_build_package(soem_advr)
-	find_or_build_package(walkman-master-ecat)
-	find_or_build_package(ec_master_test)
-endif(SUPERBUILD_XBotCore)
+find_or_build_package_with_tag(XBotCore ON)
+	
+#find_or_build_package(soem_advr)
+#find_or_build_package(walkman-master-ecat)
+#find_or_build_package(ec_master_test)
 
 # ------------------------
 # Compile GazeboXBotPlugin
@@ -145,3 +152,8 @@ find_or_build_package_with_tag(gazebo_magnetic_attach_plugin OFF)
 # orocos-bayesian-filtering
 # --------------------------------------
 find_or_build_package_with_tag(OrocosBFL OFF)
+
+# --------------------------------------
+# Playback_mat_with_DK
+# --------------------------------------
+find_or_build_package_with_tag(Playback_mat_with_DK OFF)

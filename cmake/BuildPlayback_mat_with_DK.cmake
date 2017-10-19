@@ -1,17 +1,14 @@
-# centauroLocomotor
+# Playback_mat_with_DK
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XCM QUIET)
-find_or_build_package(OpenSoT-lite QUIET)
 
-ycm_ep_helper(  centauroLocomotor
+ycm_ep_helper(  Playback_mat_with_DK
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/centauroLocomotor.git
+                REPOSITORY ADVRHumanoids/Playback_mat_with_DK.git
                 TAG master
                 COMPONENT external
                 DEPENDS XCM
-                        OpenSoT-lite
-                )
-
+             )
