@@ -102,3 +102,23 @@ find_or_build_package_with_tag(cogimon-gazebo-models OFF)
 # Compile gazebo-pkgs
 # --------------------------------------
 find_or_build_package_with_tag(gazebo-pkgs OFF)
+
+# --------------------------------------
+# Compile mpcqp_walking
+# --------------------------------------
+find_or_build_package_with_tag(mpcqp_walking OFF)
+
+# --------------------------------------
+# Compile compliant_stabilizer
+# --------------------------------------
+find_or_build_package_with_tag(compliant_stabilizer OFF)
+
+# --------------------------------------
+# Compile compliant_stabilizer
+# --------------------------------------
+find_or_build_package_with_tag(compliant_stabilizer OFF)
+
+# --------------------------------------
+# Compile RobotInterfaceOROCOS
+# --------------------------------------
+find_or_build_package_with_tag(RobotInterfaceOROCOS OFF)

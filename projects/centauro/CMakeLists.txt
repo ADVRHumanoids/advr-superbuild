@@ -94,3 +94,9 @@ find_or_build_package_with_tag(WholeBodyKeyboardCtrl OFF)
 
 find_or_build_package_with_tag(centauro_upperbody_cheng OFF)
 
+# --------------------------------------
+# Compile CentauroAlexUDP
+# --------------------------------------
+find_or_build_package_with_tag(CentauroAlexUDP OFF)
+
+
