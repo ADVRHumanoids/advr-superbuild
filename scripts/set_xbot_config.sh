@@ -20,8 +20,8 @@ cp $input1 $ROBOTOLOGY_ROOT/build/install/configs
 
 CONFIG=`find $input1 -name "*.yaml" -exec basename {} \;`
 
-echo "export XBOT_CONFIG=$ROBOTOLOGY_ROOT/build/install/configs/$CONFIG" > $ROBOTOLOGY_ROOT/build/install/configs/active_config
-echo "XBOT_CONFIG : $ROBOTOLOGY_ROOT/build/install/configs/$CONFIG"
+echo "XBOT_CONFIG: $ROBOTOLOGY_ROOT/build/install/configs/$CONFIG" > $ROBOTOLOGY_ROOT/build/install/configs/active_config.yaml
+echo "XBOT_CONFIG: $ROBOTOLOGY_ROOT/build/install/configs/$CONFIG"
 
 # come back to the dir where the script was executed
 cd $actual_dir

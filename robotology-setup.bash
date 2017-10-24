@@ -233,9 +233,12 @@ else
 fi
  
 #export xbot config
-if [ -f $ROBOTOLOGY_ROOT/build/install/configs/active_config ]; then
-    . $ROBOTOLOGY_ROOT/build/install/configs/active_config
+mkdir -p $ROBOTOLOGY_ROOT/build/install/configs
+if [ -d $ROBOTOLOGY_ROOT/build/install/configs ]; then
+        export XBOT_CONFIG=$ROBOTOLOGY_ROOT/build/install/configs/active_config.yaml
+else
+        export XBOT_CONFIG=
 fi
 
 
- 
+
