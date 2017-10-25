@@ -86,3 +86,9 @@ find_or_build_package_with_tag(sensors-description OFF)
 # --------------------------------------
 find_or_build_package_with_tag(WALKMAN_shared ON)
 
+# --------------------------------------
+# Compile RVL_PERCEPTION_shared
+# --------------------------------------
+find_or_build_package_with_tag(rvl_perception OFF)
+
+
