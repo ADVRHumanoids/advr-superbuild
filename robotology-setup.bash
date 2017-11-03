@@ -90,6 +90,11 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
                      pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/ros_orocos_joint_trajectory_server
 		fi
        fi
+
+       if [ -f ${ROBOTOLOGY_ROOT}/external/RobotInterfaceOROCOS/CMakeLists.txt ]; then
+              pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib
+              pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/RobotInterfaceOROCOS
+       fi
 fi
 
 #gazebo setup
@@ -108,7 +113,7 @@ pathadd CMAKE_PREFIX_PATH $ROBOTOLOGY_ROOT/build/install
 export ROS_PACKAGE_PATH=$ROBOTOLOGY_ROOT/build/install/share:$ROS_PACKAGE_PATH
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/stacks
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
-pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/icub_description
 pathadd CPATH $ROBOTOLOGY_ROOT/build/install/include
@@ -119,7 +124,7 @@ pathadd PYTHONPATH $ROBOTOLOGY_ROOT/external/OpenSoT/python/interfaces/yarp
 pathadd PKG_CONFIG_PATH $ROBOTOLOGY_ROOT/build/install/lib/pkgconfig
 pathadd GAZEBO_PLUGIN_PATH /opt/ros/${ROS_DISTRO}/lib
 pathadd GAZEBO_PLUGIN_PATH $ROBOTOLOGY_ROOT/build/install/lib
-pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg/coman_gazebo/database
+pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg/coman_gazebo/database
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/icub_gazebo
 if [ -d $ROBOTOLOGY_ROOT/robots/walkman_final_demo_field ]; then
        pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/walkman_final_demo_field

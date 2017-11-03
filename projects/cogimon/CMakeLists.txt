@@ -68,6 +68,11 @@ find_or_build_package_with_tag(rtt-gazebo-lwr4plus-sim OFF)
 find_or_build_package_with_tag(orocos_ros_joint_state_publisher OFF)
 
 # --------------------------------------
+# Compile orocos_opensot_ik
+# --------------------------------------
+find_or_build_package_with_tag(orocos_opensot_ik OFF)
+
+# --------------------------------------
 # Compile rtt_coman
 # --------------------------------------
 find_or_build_package_with_tag(rtt_coman OFF)
@@ -76,6 +81,7 @@ find_or_build_package_with_tag(rtt_coman OFF)
 # Compile ros_orocos_joints_gui
 # --------------------------------------
 find_or_build_package_with_tag(ros_orocos_joints_gui OFF)
+
 
 # --------------------------------------
 # Compile ros_orocos_joint_trajectory_server
@@ -96,3 +102,23 @@ find_or_build_package_with_tag(cogimon-gazebo-models OFF)
 # Compile gazebo-pkgs
 # --------------------------------------
 find_or_build_package_with_tag(gazebo-pkgs OFF)
+
+# --------------------------------------
+# Compile mpcqp_walking
+# --------------------------------------
+find_or_build_package_with_tag(mpcqp_walking OFF)
+
+# --------------------------------------
+# Compile compliant_stabilizer
+# --------------------------------------
+find_or_build_package_with_tag(compliant_stabilizer OFF)
+
+# --------------------------------------
+# Compile compliant_stabilizer
+# --------------------------------------
+find_or_build_package_with_tag(compliant_stabilizer OFF)
+
+# --------------------------------------
+# Compile RobotInterfaceOROCOS
+# --------------------------------------
+find_or_build_package_with_tag(RobotInterfaceOROCOS OFF)

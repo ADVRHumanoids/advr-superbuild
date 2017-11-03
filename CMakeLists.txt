@@ -155,6 +155,7 @@ ENDIF(COMAN)
 # -------------------------------------
 IF(KUKA)
       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkuka)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/kukaprojects)
 ENDIF(KUKA)
 
 # --------------------------------------
