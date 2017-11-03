@@ -63,3 +63,5 @@ set(ADVR_shared_TAG f9e8f0d8196f50a)
 #set(iit-bigman-ros-pkg_TAG 2b9e47b18f24e0)
 #set(centauro-simulator_TAG bc52885a985ce750f)
 
+# Vision libs
+#set(rvl_perception_TAG c10798c0e75)

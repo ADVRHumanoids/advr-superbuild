@@ -88,6 +88,15 @@ find_or_build_package_with_tag(Pholus_demo_W OFF)
 # --------------------------------------
 find_or_build_package_with_tag(WholeBodyKeyboardCtrl OFF)
 
+# --------------------------------------
+# Compile Centauro upperbody teleoperation control (cheng)
+# --------------------------------------
+
+find_or_build_package_with_tag(centauro_upperbody_cheng OFF)
+
+# --------------------------------------
+# Compile CentauroAlexUDP
+# --------------------------------------
 find_or_build_package_with_tag(CentauroAlexUDP OFF)
 
 
