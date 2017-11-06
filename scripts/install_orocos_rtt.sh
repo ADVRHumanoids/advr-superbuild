@@ -8,8 +8,16 @@ cd orocos_ws
 
 catkin_init_workspace
 
+. /etc/lsb-release
+
 export GIT_SSL_NO_VERIFY=1
+if [[ `lsb_release -rs` == "14.04" ]] 
+then
 git clone --recursive -b toolchain-2.7 https://github.com/orocos-toolchain/orocos_toolchain.git src
+elif [[ `lsb_release -rs` == "16.04" ]]
+then
+git clone --recursive -b toolchain-2.9 https://github.com/orocos-toolchain/orocos_toolchain.git src
+fi
 cd src
 git clone https://github.com/orocos/rtt_geometry.git
 git clone https://github.com/orocos/rtt_ros_integration.git
