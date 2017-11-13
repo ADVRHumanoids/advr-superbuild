@@ -15,13 +15,14 @@ if [ ! -f "$input1" ]; then
 fi
 
 # eventually create and copy the config file chosen
-mkdir -p $ROBOTOLOGY_ROOT/build/install/configs
-cp $input1 $ROBOTOLOGY_ROOT/build/install/configs
+#mkdir -p $ROBOTOLOGY_ROOT/build/install/configs
+#$cp $input1 $ROBOTOLOGY_ROOT/build/install/configs
 
-CONFIG=`find $input1 -name "*.yaml" -exec basename {} \;`
+#CONFIG=`find $input1 -name "*.yaml" -exec basename {} \;`
+CONFIG=`readlink -f $input1`
 
-echo "XBOT_CONFIG: $ROBOTOLOGY_ROOT/build/install/configs/$CONFIG" > $ROBOTOLOGY_ROOT/build/install/configs/active_config.yaml
-echo "XBOT_CONFIG: $ROBOTOLOGY_ROOT/build/install/configs/$CONFIG"
+echo "XBOT_CONFIG: $CONFIG" > $ROBOTOLOGY_ROOT/build/install/configs/active_config.yaml
+echo "XBOT_CONFIG: $CONFIG"
 
 # come back to the dir where the script was executed
 cd $actual_dir
