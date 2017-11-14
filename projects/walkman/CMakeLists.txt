@@ -10,6 +10,7 @@ find_or_build_package_with_tag(GazeboYARPPlugins OFF)
 
 find_or_build_package_with_tag(drc_shared OFF)
 find_or_build_package_with_tag(iit-bigman-ros-pkg ON)
+find_or_build_package_with_tag(iit-walkman-ros-pkg OFF)
 find_or_build_package_with_tag(locoman_utils OFF)
 find_or_build_package_with_tag(arms_ik OFF)
 find_or_build_package_with_tag(wholebody_ik OFF)
