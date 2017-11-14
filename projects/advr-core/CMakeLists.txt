@@ -87,7 +87,7 @@ find_or_build_package_with_tag(XBotDummy ON)
 # -------------------
 # Compile WebGuiDistr
 # -------------------
-find_or_build_package_with_tag(WebGUIDistr OFF)
+find_or_build_package_with_tag(WebGUIDistr ON)
 
 # ----------------
 # Compile XBotCore
