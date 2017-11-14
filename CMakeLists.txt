@@ -86,7 +86,8 @@ set(PHOLUS OFF CACHE BOOL "Enable the download and usages of repos related to th
 # COMAN
 set(COMAN OFF CACHE BOOL "Enable the download and usages of repos related to the COMAN project")
 # KUKA
-set(KUKA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA project")
+set(KUKA4LWR OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA 4 LWR project")
+set(KUKAIIWA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA IIWA project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
 # DEPRECATED packages 
@@ -153,10 +154,15 @@ ENDIF(COMAN)
 # --------------------------------------
 # Compile related XBOTKUKA packages
 # -------------------------------------
-IF(KUKA)
+IF(KUKA4LWR)
       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkuka)
       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/kukaprojects)
-ENDIF(KUKA)
+ENDIF(KUKA4LWR)
+
+IF(KUKAIIWA)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkukaiiwa)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/kukaprojects)
+ENDIF(KUKAIIWA)
 
 # --------------------------------------
 # Compile related WALK-MAN packages
