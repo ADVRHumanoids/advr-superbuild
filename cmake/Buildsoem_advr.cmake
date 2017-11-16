@@ -6,7 +6,7 @@ ycm_ep_helper(  soem_advr
                 TYPE GIT
                 STYLE GITLAB_ADVRCLOUD
                 REPOSITORY amargan/soem_advr.git
-                TAG centauro_bonn_review_2016
+                TAG xeno-3
                 COMPONENT external
 		CMAKE_CACHE_ARGS -DBUILD_SHARED_LIBS:BOOL=ON
 				 -DENABLE_XENO:BOOL=ON

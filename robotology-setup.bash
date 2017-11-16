@@ -113,6 +113,8 @@ pathadd CMAKE_PREFIX_PATH $ROBOTOLOGY_ROOT/build/install
 export ROS_PACKAGE_PATH=$ROBOTOLOGY_ROOT/build/install/share:$ROS_PACKAGE_PATH
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/stacks
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg
+pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg/walkman_gazebo/database
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
@@ -138,6 +140,11 @@ fi
 
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg
+	# pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg/kuka_gazebo/database
+fi
+
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg/iiwa_description/
 	# pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg/kuka_gazebo/database
 fi
 
