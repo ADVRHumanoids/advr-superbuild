@@ -9,7 +9,7 @@ ycm_ep_helper(  MiscellaneousPlugins
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/MiscellaneousPlugins.git
-                TAG master
+                TAG xbot3.0
                 COMPONENT external
 		DEPENDS XCM
 			OpenSoT-lite

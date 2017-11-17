@@ -4,6 +4,7 @@ RobotInterfaceROS:
   subclass_factory_name: "robot_interface_ros"
   control_message_type: "AdvrCommandMessage"
   jointstate_message_type: "AdvrJointStateMessage"
+  publish_tf: "true"
 
 RobotInterfaceXBotRT:
   subclass_name: "RobotInterfaceXBotRT"

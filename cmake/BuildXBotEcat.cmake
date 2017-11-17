@@ -4,7 +4,8 @@ include(FindOrBuildPackage)
 
 find_or_build_package(soem_advr QUIET)
 find_or_build_package(ecat-master-advr QUIET)
-find_or_build_package(ec_master_test QUIET)
+find_or_build_package(XCM QUIET)
+find_or_build_package(XBotCore QUIET)
 
 ycm_ep_helper(  XBotEcat
                 TYPE GIT
@@ -15,7 +16,8 @@ ycm_ep_helper(  XBotEcat
 		DEPENDS 
 			soem_advr
 			ecat-master-advr
-			ec_master_test
+			XCM
+			XBotCore
 		CMAKE_CACHE_ARGS -DBUILD_SHARED_LIBS:BOOL=ON
                                  -DENABLE_XENO:BOOL=ON
 
