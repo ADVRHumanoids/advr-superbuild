@@ -144,7 +144,7 @@ if [ -d $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg ]; then
 fi
 
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg ]; then
-        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg/iiwa_description/
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg #/iiwa_description/
 	# pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg/kuka_gazebo/database
 fi
 
