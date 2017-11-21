@@ -34,6 +34,8 @@ rosdep update
 
 rosdep install orocos_toolchain
 
+sudo apt-get install libreadline liblua5.1-0-dev libncurses5-dev
+
 source src/env.sh
 catkin_make_isolated --install -DENABLE_CORBA=ON -DCORBA_IMPLEMENTATION=OMNIORB
 catkin_make_isolated --install --pkg rtt_geometry
