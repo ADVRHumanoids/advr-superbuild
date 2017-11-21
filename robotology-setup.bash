@@ -42,6 +42,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
               source ${ROBOTOLOGY_ROOT}/orocos_ws/src/env.sh
        fi
        pathadd CPATH ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/include
+       pathadd CPATH ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/include/orocos
        export LD_LIBRARY_PATH=$ROBOTOLOGY_ROOT/orocos_ws/install_isolated/lib:$LD_LIBRARY_PATH
        export LIBRARY_PATH=$ROBOTOLOGY_ROOT/orocos_ws/install_isolated/lib:$LIBRARY_PATH
        pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/ocl  
