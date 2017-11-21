@@ -35,3 +35,8 @@ ModelInterfaceRBDL:
   subclass_name: "ModelInterfaceRBDL"
   path_to_shared_lib: "libModelInterfaceRBDL.so"
   subclass_factory_name: "model_interface_rbdl"
+
+ModelInterfaceIDYNUTILS:
+  subclass_name: "ModelInterfaceIDYNUTILS"
+  path_to_shared_lib: "libModelInterfaceIDYNUTILS.so"
+  subclass_factory_name: "model_interface_idynutils"
