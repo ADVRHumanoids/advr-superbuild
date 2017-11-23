@@ -86,6 +86,7 @@ set(PHOLUS OFF CACHE BOOL "Enable the download and usages of repos related to th
 # COMAN
 set(COMAN OFF CACHE BOOL "Enable the download and usages of repos related to the COMAN project")
 # KUKA
+set(KUKA OFF CACHE BOOL "Enable the download and usages of repos related to the KUKA ")
 set(KUKA4LWR OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA 4 LWR project")
 set(KUKAIIWA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA IIWA project")
 # COGIMON EU Project 
@@ -154,14 +155,16 @@ ENDIF(COMAN)
 # --------------------------------------
 # Compile related XBOTKUKA packages
 # -------------------------------------
-IF(KUKA4LWR)
-      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkuka)
+IF(KUKA)
       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/kukaprojects)
+ENDIF(KUKA)
+
+IF(KUKA4LWR)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkuka)      
 ENDIF(KUKA4LWR)
 
 IF(KUKAIIWA)
       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkukaiiwa)
-      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/kukaprojects)
 ENDIF(KUKAIIWA)
 
 # --------------------------------------

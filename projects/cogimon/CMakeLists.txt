@@ -38,9 +38,10 @@ IF(SUPERBUILD_rtt_packages)
        find_or_build_package(rtt_gazebo_embedded)
        find_or_build_package(rtt-gazebo-clock-plugin)
        find_or_build_package(rtt-rrct-typekit) 
-       find_or_build_package(rtt-gazebo-robot-sim)     
-       find_or_build_package(rtt-core-extensions)
+       find_or_build_package(rtt-gazebo-robot-sim)           
 ENDIF(SUPERBUILD_rtt_packages)
+
+find_or_build_package_with_tag(rtt-core-extensions OFF)
 
 # --------------------------------------
 # Compile cogimon-experimental
