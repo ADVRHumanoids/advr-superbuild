@@ -6,6 +6,11 @@ RobotInterfaceROS:
   jointstate_message_type: "AdvrJointStateMessage"
   publish_tf: "true"
 
+RobotInterfaceOROCOS:
+  subclass_name: "RobotInterfaceOROCOS"
+  path_to_shared_lib: "libRobotInterfaceOROCOS.so"
+  subclass_factory_name: "robot_interface_orocos"
+
 RobotInterfaceXBotRT:
   subclass_name: "RobotInterfaceXBotRT"
   path_to_shared_lib: "libRobotInterfaceXBotRT.so"

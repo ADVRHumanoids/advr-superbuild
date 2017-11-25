@@ -41,6 +41,8 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
        if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/src/env.sh ]; then
               source ${ROBOTOLOGY_ROOT}/orocos_ws/src/env.sh
        fi
+       pathadd CPATH ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/include
+       pathadd CPATH ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/include/orocos
        export LD_LIBRARY_PATH=$ROBOTOLOGY_ROOT/orocos_ws/install_isolated/lib:$LD_LIBRARY_PATH
        export LIBRARY_PATH=$ROBOTOLOGY_ROOT/orocos_ws/install_isolated/lib:$LIBRARY_PATH
        pathadd RTT_COMPONENT_PATH /opt/ros/${ROS_DISTRO}/lib/orocos/gnulinux/ocl  
@@ -144,7 +146,7 @@ if [ -d $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg ]; then
 fi
 
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg ]; then
-        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg/iiwa_description/
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-iiwa-ros-pkg #/iiwa_description/
 	# pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg/kuka_gazebo/database
 fi
 
@@ -236,7 +238,7 @@ alias superbuild=". ${ROBOTOLOGY_ROOT}/scripts/superbuild.sh"
 source ${ROBOTOLOGY_ROOT}/scripts/superbuild.profile
 
 alias set_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/set_xbot_config.sh"
-
+alias get_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/get_xbot_config.sh"
 
 # add robotology folder for robot models
 if [ -d $ROBOTOLOGY_ROOT/build/install/share/robots ]; then
