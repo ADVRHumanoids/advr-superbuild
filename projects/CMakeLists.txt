@@ -9,8 +9,8 @@ IF(SUPERBUILD_DRC_CORE)
     find_or_build_package(iDynTree)
     find_or_build_package(idynutils)
     find_or_build_package(OpenSoT)
-    find_or_build_package(GYM)
-    find_or_build_package(paramHelp)
+    find_or_build_package_with_tag(GYM OFF)
+    find_or_build_package_with_tag(paramHelp OFF)
 
     # Compile Gazebo comanapp
     find_or_build_package_with_tag(comanapp OFF)

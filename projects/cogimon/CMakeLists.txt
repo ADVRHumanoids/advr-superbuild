@@ -79,6 +79,11 @@ find_or_build_package_with_tag(orocos_opensot_ik OFF)
 find_or_build_package_with_tag(rtt_coman OFF)
 
 # --------------------------------------
+# Compile rtt_xbotcore
+# --------------------------------------
+find_or_build_package_with_tag(rtt_xbotcore OFF)
+
+# --------------------------------------
 # Compile ros_orocos_joints_gui
 # --------------------------------------
 find_or_build_package_with_tag(ros_orocos_joints_gui OFF)
