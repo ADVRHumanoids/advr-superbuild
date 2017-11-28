@@ -5,10 +5,10 @@ include(FindOrBuildPackage)
 find_or_build_package(XCM QUIET)
 find_or_build_package(OpenSoT-lite QUIET)
 
-ycm_ep_helper(  QPPVM_RT_plugin
+ycm_ep_helper(  qppvm
                 TYPE GIT
-                STYLE GITLAB_ADVRCLOUD
-                REPOSITORY advr_humanoids/qppvm_rt_plugin.git
+                STYLE GITHUB
+                REPOSITORY ADVRHumanoids/qppvm.git
                 TAG master
                 COMPONENT external
 		DEPENDS XCM
