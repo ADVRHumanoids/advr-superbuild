@@ -64,8 +64,8 @@ include(FindOrBuildPackage)
 include(YCMEPHelper)
 
 if(NOT CMAKE_BUILD_TYPE)
-    message("CMAKE BUILD TYPE******************")
-    set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
+    message("CMAKE BUILD TYPE: RelWithDebInfo by default")
+    set(CMAKE_BUILD_TYPE "RelWithDebInfo" CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
 endif(NOT CMAKE_BUILD_TYPE)
 	  
 
