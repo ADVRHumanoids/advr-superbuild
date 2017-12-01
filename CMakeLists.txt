@@ -63,6 +63,11 @@ include(YCMBootstrap)
 include(FindOrBuildPackage)
 include(YCMEPHelper)
 
+if(NOT CMAKE_BUILD_TYPE)
+	  set(CMAKE_BUILD_TYPE "Release" CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
+endif(NOT CMAKE_BUILD_TYPE)
+	  
+
 #set(USE_SYSTEM_YARP OFF CACHE BOOL "Initial cache")
 #set(USE_SYSTEM_KDL_CODYCO OFF CACHE BOOL "Initial cache")
 #set(USE_SYSTEM_IDYNTREE OFF CACHE BOOL "Initial cache")
