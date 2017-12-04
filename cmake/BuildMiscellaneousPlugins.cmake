@@ -11,6 +11,6 @@ ycm_ep_helper(  MiscellaneousPlugins
                 REPOSITORY ADVRHumanoids/MiscellaneousPlugins.git
                 TAG xbot3.0
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
 			OpenSoT-lite
              )
