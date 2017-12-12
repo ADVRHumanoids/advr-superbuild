@@ -2,6 +2,12 @@
 
 echo "This script will create an orocos_ws in your robotology_superbuild folder."
 
+if ["$1" == "xenomai"]
+then
+export OROCOS_TARGET="xenomai"
+echo "Compiling OROCOS under xenomai"
+fi
+
 cd $ROBOTOLOGY_ROOT
 mkdir orocos_ws
 cd orocos_ws
