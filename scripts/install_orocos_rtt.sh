@@ -2,6 +2,15 @@
 
 echo "This script will create an orocos_ws in your robotology_superbuild folder."
 
+if [ "$1" == "xenomai" ]
+then
+export OROCOS_TARGET="xenomai"
+echo "Compiling OROCOS under xenomai"
+XENO_VERSION="$(xeno-config --version)"
+echo "XENOMAI VERSION IS " ${XENO_VERSION}
+XENO_MAJOR_VERSION=${XENO_VERSION:0:1}
+fi
+
 cd $ROBOTOLOGY_ROOT
 mkdir orocos_ws
 cd orocos_ws
@@ -18,6 +27,19 @@ elif [[ `lsb_release -rs` == "16.04" ]]
 then
 git clone --recursive -b toolchain-2.9 https://github.com/orocos-toolchain/orocos_toolchain.git src
 fi
+
+if [ ${XENO_MAJOR_VERSION} -gt 2 ]
+then 
+echo "I will remove standard rtt and ocl and install the patches"
+rm -rf src/rtt
+rm -rf src/ocl
+echo "I will clone rtt and ocl ahoarau patches"
+cd src
+git clone -b xenomai3-support-v2 https://github.com/ahoarau/rtt.git
+git clone -b xenomai3-support-v2 https://github.com/ahoarau/ocl.git
+cd ..
+fi
+
 cd src
 git clone https://github.com/orocos/rtt_geometry.git
 git clone https://github.com/orocos/rtt_ros_integration.git
