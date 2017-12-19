@@ -126,7 +126,7 @@ find_or_build_package_with_tag(OpenSoT-lite OFF)
 # ----------------
 # Compile MiscellaneousPlugins
 # ----------------
-find_or_build_package_with_tag(MiscellaneousPlugins ON)
+find_or_build_package_with_tag(MiscellaneousPlugins OFF)
 
 # --------------------------------------
 # Compile trajectory_utils
