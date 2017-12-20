@@ -6,37 +6,42 @@ set(YCM_GIT_GITLAB_ADVRCLOUD_BASE_ADDRESS "ssh://git@gitlab.advrcloud.iit.it/" C
 # ---------------------
 # Compile XBotInterface
 # ---------------------
-find_or_build_package_with_tag(XBotInterface OFF)
+find_or_build_package_with_tag(XBotInterface ON)
 
 # ---------------------
 # Compile srdfdom_advr
 # ---------------------
-find_or_build_package_with_tag(srdfdom_advr OFF)
+find_or_build_package_with_tag(srdfdom_advr ON)
 
 # ---------------------
 # Compile XBotCoreModel
 # ---------------------
-find_or_build_package_with_tag(XBotCoreModel OFF)
+find_or_build_package_with_tag(XBotCoreModel ON)
 
 # ------------------
 # Compile sharedlibpp
 # ------------------
-find_or_build_package_with_tag(sharedlibpp OFF)
+find_or_build_package_with_tag(sharedlibpp ON)
 
 # -------------------------
 # Compile RobotInterfaceROS
 # -------------------------
-find_or_build_package_with_tag(RobotInterfaceROS OFF)
+find_or_build_package_with_tag(RobotInterfaceROS ON)
 
 # -------------------------
 # Compile ModelInterfaceRBDL
 # -------------------------
-find_or_build_package_with_tag(ModelInterfaceRBDL OFF)
+find_or_build_package_with_tag(ModelInterfaceRBDL ON)
+
+# -------------------------
+# Compile ModelInterfaceIDYNUTILS
+# -------------------------
+find_or_build_package_with_tag(ModelInterfaceIDYNUTILS OFF)
 
 # ---------------------------
 # Compile RobotInterfaceDUMMY
 # ---------------------------
-find_or_build_package_with_tag(RobotInterfaceDUMMY OFF)
+find_or_build_package_with_tag(RobotInterfaceDUMMY ON)
 
 # --------------------------
 # Compile RobotInterfaceYARP
@@ -46,12 +51,12 @@ find_or_build_package_with_tag(RobotInterfaceYARP OFF)
 # ----------------------------
 # Compile RobotInterfaceXBotRT
 # ----------------------------
-find_or_build_package_with_tag(RobotInterfaceXBotRT OFF)
+find_or_build_package_with_tag(RobotInterfaceXBotRT ON)
 
 # ----------------------------
 # Compile XCM
 # ----------------------------
-find_or_build_package_with_tag(XCM OFF)
+find_or_build_package_with_tag(XCM ON)
 
 # -------------------
 # Compile ADVR_shared
@@ -63,30 +68,98 @@ find_or_build_package_with_tag(ADVR_shared OFF)
 # -------------------
 find_or_build_package_with_tag(advr_humanoids_common_utils OFF)
 
+# -------------------
+# Compile XBotEcat
+# -------------------
+find_or_build_package_with_tag(XBotEcat OFF)
+
+# -------------------
+# Compile XBotEthernet
+# -------------------
+find_or_build_package_with_tag(XBotEthernet OFF)
+
+
+# -------------------
+# Compile XBotDummy
+# -------------------
+find_or_build_package_with_tag(XBotDummy ON)
+
+# -------------------
+# Compile WebGuiDistr
+# -------------------
+find_or_build_package_with_tag(WebGUIDistr ON)
+
 # ----------------
 # Compile XBotCore
 # ----------------
-set(SUPERBUILD_XBotCore OFF CACHE BOOL "Flag to compile XBotCore and his dependencies: XBotCoreModel, soem_advr, walkman-master-ecat, ec_master_test")
-if(SUPERBUILD_XBotCore)
-find_or_build_package(XBotCore)
-	find_or_build_package(XBotCoreModel)
-	find_or_build_package(soem_advr)
-	find_or_build_package(walkman-master-ecat)
-	find_or_build_package(ec_master_test)
-endif(SUPERBUILD_XBotCore)
+find_or_build_package_with_tag(XBotCore ON)
+	
+#find_or_build_package(soem_advr)
+#find_or_build_package(walkman-master-ecat)
+#find_or_build_package(ec_master_test)
 
 # ------------------------
 # Compile GazeboXBotPlugin
 # ------------------------
-find_or_build_package_with_tag(GazeboXBotPlugin OFF)
+find_or_build_package_with_tag(GazeboXBotPlugin ON)
 
 # ----------------
-# Compile XBotCore-interfaces
+# Compile EtherCAT_tools
 # ----------------
-find_or_build_package_with_tag(XBotCore-interfaces OFF)
+find_or_build_package_with_tag(EtherCAT_tools OFF)
 
+# ----------------
+# Compile XBotYARP
+# ----------------
+find_or_build_package_with_tag(XBotYARP OFF)
 
 # ----------------
-# Compile OpenSoT
+# Compile XBotGUI
 # ----------------
-find_or_build_package_with_tag(OpenSoT OFF)
+find_or_build_package_with_tag(XBotGUI OFF)
+
+# ----------------
+# Compile OpenSoT-lite
+# ----------------
+find_or_build_package_with_tag(OpenSoT-lite OFF)
+
+# ----------------
+# Compile MiscellaneousPlugins
+# ----------------
+find_or_build_package_with_tag(MiscellaneousPlugins OFF)
+
+# --------------------------------------
+# Compile trajectory_utils
+# --------------------------------------
+find_or_build_package_with_tag(trajectory_utils ON)
+
+# --------------------------------------
+# Compile ADVR_ROS
+# --------------------------------------
+find_or_build_package_with_tag(ADVR_ROS ON)
+
+# --------------------------------------
+# Compile ManipulationPlugin
+# --------------------------------------
+find_or_build_package_with_tag(ManipulationPlugin ON)
+
+# --------------------------------------
+# gazebo_magnetic_attach_plugin
+# --------------------------------------
+find_or_build_package_with_tag(gazebo_magnetic_attach_plugin OFF)
+
+# --------------------------------------
+# orocos-bayesian-filtering
+# --------------------------------------
+find_or_build_package_with_tag(OrocosBFL OFF)
+
+# --------------------------------------
+# nlopt
+# --------------------------------------
+find_or_build_package_with_tag(nlopt OFF)
+
+# --------------------------------------
+# Playback_mat_with_DK
+# --------------------------------------
+find_or_build_package_with_tag(Playback_mat_with_DK OFF)
+

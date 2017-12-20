@@ -1,15 +1,10 @@
-robotology-superbuild
+ADVR-CORE [![Build Status](https://travis-ci.org/ADVRHumanoids/advr-superbuild.svg?branch=master)](https://travis-ci.org/ADVRHumanoids/advr-superbuild)
+
+advr-superbuild
 =====================
 
-Robotology Superbuild
+ADVR Superbuild
 
-Please take a look at the [wiki](https://github.com/robotology-playground/robotology-superbuild/wiki/robotology-superbuild-handbook#installation) for installation instructions
-
-_________________________________________________
-To download and compile COGIMON related packages
------------------------------------
-Set to ON the COGIMON_EU variable in the main CMakeLists.txt
-
-To download and compile TOKYO University related packages
------------------------------------
-Set to ON the YNL_HYDRA_TOKYO_UNIVERSITY variable in the main CMakeLists.txt
+The superbuild will be built periodically by Travis CI and every time a push happens.
+If you do not want trigger Travis CI put [ci skip] in the commit comment.
+Please take a look at the [wiki](https://github.com/ADVRHumanoids/advr-superbuild/wiki) for installation instructions

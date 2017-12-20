@@ -22,12 +22,12 @@ set(SUPERBUILD_RSB_framework OFF CACHE BOOL "Flag to compile RSB_framework")
 IF(SUPERBUILD_RSB_framework)
        find_or_build_package(RSC)
        find_or_build_package(RSB_Protocol)
-       find_or_build_package(RSB)
-       find_or_build_package(RSB_Tools_cpp)
-       find_or_build_package(RST)
+       find_or_build_package_with_tag(RSB OFF)
+       find_or_build_package_with_tag(RSB_Tools_cpp OFF)
+       find_or_build_package_with_tag(RST OFF)
        find_or_build_package(RST_RT)
-       find_or_build_package(rst-converters)
-       find_or_build_package(rtt-rsb-transport)
+       find_or_build_package_with_tag(rst-converters OFF)
+       find_or_build_package_with_tag(rtt-rsb-transport OFF)
 ENDIF(SUPERBUILD_RSB_framework)
 
 # ---------------------
@@ -38,9 +38,10 @@ IF(SUPERBUILD_rtt_packages)
        find_or_build_package(rtt_gazebo_embedded)
        find_or_build_package(rtt-gazebo-clock-plugin)
        find_or_build_package(rtt-rrct-typekit) 
-       find_or_build_package(rtt-gazebo-robot-sim)     
-       find_or_build_package(rtt-core-extensions)
+       find_or_build_package(rtt-gazebo-robot-sim)           
 ENDIF(SUPERBUILD_rtt_packages)
+
+find_or_build_package_with_tag(rtt-core-extensions OFF)
 
 # --------------------------------------
 # Compile cogimon-experimental
@@ -68,9 +69,19 @@ find_or_build_package_with_tag(rtt-gazebo-lwr4plus-sim OFF)
 find_or_build_package_with_tag(orocos_ros_joint_state_publisher OFF)
 
 # --------------------------------------
+# Compile orocos_opensot_ik
+# --------------------------------------
+find_or_build_package_with_tag(orocos_opensot_ik OFF)
+
+# --------------------------------------
 # Compile rtt_coman
 # --------------------------------------
 find_or_build_package_with_tag(rtt_coman OFF)
+
+# --------------------------------------
+# Compile rtt_xbotcore
+# --------------------------------------
+find_or_build_package_with_tag(rtt_xbotcore OFF)
 
 # --------------------------------------
 # Compile ros_orocos_joints_gui
@@ -78,3 +89,44 @@ find_or_build_package_with_tag(rtt_coman OFF)
 find_or_build_package_with_tag(ros_orocos_joints_gui OFF)
 
 
+# --------------------------------------
+# Compile ros_orocos_joint_trajectory_server
+# --------------------------------------
+find_or_build_package_with_tag(ros_orocos_joint_trajectory_server OFF)
+
+# --------------------------------------
+# Compile compliance_ctrl
+# --------------------------------------
+find_or_build_package_with_tag(compliance_ctrl OFF)
+
+# --------------------------------------
+# Compile cogimon-gazebo-models
+# --------------------------------------
+find_or_build_package_with_tag(cogimon-gazebo-models OFF)
+
+# --------------------------------------
+# Compile gazebo-pkgs
+# --------------------------------------
+find_or_build_package_with_tag(gazebo-pkgs OFF)
+
+# --------------------------------------
+# Compile mpcqp_walking
+# --------------------------------------
+find_or_build_package_with_tag(mpcqp_walking OFF)
+
+# --------------------------------------
+# Compile compliant_stabilizer
+# --------------------------------------
+find_or_build_package_with_tag(compliant_stabilizer OFF)
+
+# --------------------------------------
+# Compile compliant_stabilizer
+# --------------------------------------
+find_or_build_package_with_tag(compliant_stabilizer OFF)
+
+# --------------------------------------
+# Compile RobotInterfaceOROCOS
+# --------------------------------------
+find_or_build_package_with_tag(RobotInterfaceOROCOS OFF)
+
+find_or_build_package_with_tag(cogimon_tools OFF)

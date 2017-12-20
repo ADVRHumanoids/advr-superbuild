@@ -4,8 +4,11 @@ include(FindOrBuildPackage)
 
 ycm_ep_helper(  centauro-simulator
                 TYPE GIT
-                STYLE GITLAB_ADVRCLOUD
-                REPOSITORY Navvab/centauro-simulator.git
+                STYLE GITHUB
+                REPOSITORY ADVRHumanoids/centauro-simulator.git
                 TAG master
                 COMPONENT robots
-		)
+                DEPENDS
+                BUILD_COMMAND ""
+		INSTALL_COMMAND ""
+              )

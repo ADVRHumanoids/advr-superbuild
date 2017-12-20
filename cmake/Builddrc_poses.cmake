@@ -5,11 +5,12 @@ include(FindOrBuildPackage)
 find_or_build_package(drc_shared QUIET)
 find_or_build_package(GYM QUIET)
 find_or_build_package(trajectory_generator QUIET)
+find_or_build_package(Eigen QUIET)
 
 ycm_ep_helper(  drc_poses
                 TYPE GIT
-                STYLE GITLAB_ROBOTOLOGY
-                REPOSITORY walkman-drc/drc_poses.git
+                STYLE GITHUB
+                REPOSITORY ADVRHumanoids/drc_poses.git
                 TAG master
                 COMPONENT robots
                 DEPENDS drc_shared

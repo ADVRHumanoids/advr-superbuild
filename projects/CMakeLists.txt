@@ -5,16 +5,25 @@ cmake_minimum_required(VERSION 2.8.12)
 # ----------------
 set(SUPERBUILD_DRC_CORE OFF CACHE BOOL "Flag to compile DRC_CORE repos: YARP, iDynTree, idynutils, OpenSoT, GYM, paramHelp")
 IF(SUPERBUILD_DRC_CORE)
-	find_or_build_package(YARP)
-	find_or_build_package(iDynTree)
-	find_or_build_package(idynutils)
-	find_or_build_package(OpenSoT)
-	find_or_build_package(GYM)
-	find_or_build_package(paramHelp)
+    find_or_build_package(YARP)
+    find_or_build_package(iDynTree)
+    find_or_build_package(idynutils)
+    find_or_build_package(OpenSoT)
+    find_or_build_package_with_tag(GYM OFF)
+    find_or_build_package_with_tag(paramHelp OFF)
+
+    # Compile Gazebo comanapp
+    find_or_build_package_with_tag(comanapp OFF)
+
 ENDIF(SUPERBUILD_DRC_CORE)
 
-
-
+# ----------------
+# 
+set(SUPERBUILD_COMAN_INTERFACE OFF CACHE BOOL "Flag to compile robotInterface for coman")
+IF(SUPERBUILD_COMAN_INTERFACE)
+    find_or_build_package(comaninterface)
+    find_or_build_package(comanmod)
+ENDIF(SUPERBUILD_COMAN_INTERFACE)
 
 #------
 # Model
@@ -23,6 +32,7 @@ ENDIF(SUPERBUILD_DRC_CORE)
 find_or_build_package_with_tag(IITComanRosPkg OFF)
 # Compile iCub model
 find_or_build_package_with_tag(icub_gazebo OFF)
+find_or_build_package_with_tag(icub_description OFF)
 # Compile Gazebo YARP plugin
 find_or_build_package_with_tag(GazeboYARPPlugins OFF)
 
@@ -58,46 +68,6 @@ find_or_build_package_with_tag(simple_homing OFF)
 # --------------------------------------
 find_or_build_package_with_tag(testQPsolvers OFF)
 
-# --------------------------------------
-# Compile trajectory_utils - OFF by default
-# --------------------------------------
-find_or_build_package_with_tag(trajectory_utils OFF)
-
-# --------------------------------------
-# Compile vigir_footstep_planning_msgs - OFF by default
-# --------------------------------------
-#find_or_build_package_with_tag(vigir_footstep_planning_msgs OFF)
-
-# --------------------------------------
-# Compile vigir_footstep_planning_core - OFF by default
-# --------------------------------------
-#find_or_build_package_with_tag(vigir_footstep_planning_core OFF)
-
-# --------------------------------------
-# Compile vigir_footstep_planning_basics - OFF by default
-# --------------------------------------
-#find_or_build_package_with_tag(vigir_footstep_planning_basics OFF)
-
-# --------------------------------------
-# Compile vigir_footstep_planning_lib - OFF by default
-# --------------------------------------
-#find_or_build_package_with_tag(vigir_footstep_planning_lib OFF)
-
-# --------------------------------------
-# Compile vigir_generic_params - OFF by default
-# --------------------------------------
-#find_or_build_package_with_tag(vigir_generic_params OFF)
-
-# --------------------------------------
-# Compile vigir_pluginlib_msgs - OFF by default
-# --------------------------------------
-#find_or_build_package_with_tag(vigir_pluginlib_msgs OFF)
-
-# --------------------------------------
-# Compile vigir_pluginlib_manager - OFF by default
-# --------------------------------------
-#find_or_build_package_with_tag(vigir_pluginlib_manager OFF)
-
 # ---------------------
 # Compile ft_publisher
 # ---------------------
@@ -128,10 +98,12 @@ find_or_build_package_with_tag(drc_poses OFF)
 # --------------------------------------
 find_or_build_package_with_tag(pilot_interface OFF)
 
+
 # --------------------------------------
 # Compile network
 # --------------------------------------
 find_or_build_package_with_tag(network OFF)
+
 
 # --------------------------------------
 # Compile robotran predictor modules
@@ -207,5 +179,10 @@ IF(NOT USE_ONLY_OPEN_SOURCE)
        # COMAN_shared
        # --------------------------------------
        find_or_build_package_with_tag(COMAN_shared OFF)
+
+       # --------------------------------------
+       # walkman-drc_COMAN_shared
+       # --------------------------------------
+       find_or_build_package_with_tag(walkman-drc_COMAN_shared OFF)
 
 ENDIF(NOT USE_ONLY_OPEN_SOURCE)

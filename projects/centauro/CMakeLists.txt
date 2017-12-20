@@ -36,4 +36,73 @@ find_or_build_package_with_tag(InverseKinematics OFF)
 # -------------------------
 # QPPVM_RT_plugin
 # -------------------------
-find_or_build_package_with_tag(QPPVM_RT_plugin OFF)
+find_or_build_package_with_tag(qppvm OFF)
+
+# -------------------------
+# Artificial Potential Fields
+# -------------------------
+find_or_build_package_with_tag(ArtificialPotentialFields OFF)
+
+# ---------------------
+# Compile QPBuilder
+# ---------------------
+find_or_build_package_with_tag(QPBuilder OFF)
+
+# ---------------------
+# Compile ik_twolayer
+# ---------------------
+find_or_build_package_with_tag(ik_twolayer OFF)
+
+# ---------------------
+# Compile MpcLocomotion
+# ---------------------
+find_or_build_package_with_tag(MpcLocomotion OFF)
+
+# ---------------------
+# Compile QPOases
+# ---------------------
+find_or_build_package_with_tag(QPOases OFF)
+
+# ---------------------
+# Compile bi-man2 
+# ---------------------
+find_or_build_package_with_tag(bi-man2 OFF)
+
+#-----------------------
+#centauroLocomotor
+#----------------------
+find_or_build_package_with_tag(centauroLocomotor OFF)
+
+#-----------------------
+# Controller
+#----------------------
+find_or_build_package_with_tag(Controller OFF)
+
+# --------------------------------------
+# Compile Parking_Steering
+# --------------------------------------
+find_or_build_package_with_tag(Parking_Steering OFF)
+
+# --------------------------------------
+# Compile whole body keyboard control
+# --------------------------------------
+find_or_build_package_with_tag(WholeBodyKeyboardCtrl OFF)
+
+# --------------------------------------
+# Compile Centauro upperbody teleoperation control (cheng)
+# --------------------------------------
+
+find_or_build_package_with_tag(centauro_upperbody_cheng OFF)
+
+# --------------------------------------
+# Compile CentauroAlexUDP
+# --------------------------------------
+find_or_build_package_with_tag(CentauroAlexUDP OFF)
+
+# --------------------------------------
+# Compile centauro_tools
+# --------------------------------------
+find_or_build_package_with_tag(centauro_tools OFF)
+
+find_or_build_package_with_tag(WBObjectFollower OFF)
+

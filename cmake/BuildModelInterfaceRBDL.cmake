@@ -7,8 +7,8 @@ find_or_build_package(XBotInterface QUIET)
 
 ycm_ep_helper(  ModelInterfaceRBDL
                 TYPE GIT
-                STYLE GITLAB_ADVRCLOUD
-                REPOSITORY advr_humanoids/modelinterfacerbdl.git
+                STYLE GITHUB
+                REPOSITORY ADVRHumanoids/ModelInterfaceRBDL.git
                 TAG master
                 COMPONENT external
 		DEPENDS rbdl

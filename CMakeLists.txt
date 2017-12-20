@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 2.8.12)
-if(COMMAND cmake_policy)
+
+if(POLICY CMP0064 AND COMMAND cmake_policy)
     cmake_policy(SET CMP0064 OLD)
-endif(COMMAND cmake_policy)
+endif(POLICY CMP0064 AND COMMAND cmake_policy)
 
 project(robotology NONE)
 
@@ -42,7 +43,17 @@ include(CTest)
 include(FeatureSummary)
 
 set(YCM_GIT_GITLAB_ROBOTOLOGY_BASE_ADDRESS "https://gitlab.robotology.eu/" CACHE STRING "Address to use for Robotology Gitlab git repositories" FORCE)
-set(YCM_USE_CMAKE_PROPOSED TRUE CACHE BOOL "Use files including unmerged cmake patches")
+
+if(UBUNTU_XENIAL)
+    set(YCM_USE_CMAKE_PROPOSED FALSE CACHE BOOL "Use files including unmerged cmake patches")
+
+    set(PYTHON_VERSION "2.7" CACHE STRING "Python Version" FORCE)
+    set(PYTHON_EXECUTABLE "/usr/bin/python2.7" CACHE STRING "Python Executable Path" FORCE)
+    set(PYTHON_INCLUDE_DIR "/usr/include/python2.7" CACHE STRING "Python Include Folder Path" FORCE)
+    set(PYTHON_LIBRARY "/usr/lib/x86_64-linux-gnu/libpython2.7.so" CACHE STRING "Python Library Folder Path" FORCE)
+else(UBUNTU_XENIAL)
+    set(YCM_USE_CMAKE_PROPOSED TRUE CACHE BOOL "Use files including unmerged cmake patches")
+endif(UBUNTU_XENIAL)
 
 include(ProjectsTags OPTIONAL)
 
@@ -51,6 +62,12 @@ include(YCMBootstrap)
 
 include(FindOrBuildPackage)
 include(YCMEPHelper)
+
+if(NOT CMAKE_BUILD_TYPE)
+    message("CMAKE BUILD TYPE: RelWithDebInfo by default")
+    set(CMAKE_BUILD_TYPE "RelWithDebInfo" CACHE STRING "Choose the type of build, options are: Debug Release RelWithDebInfo MinSizeRel." FORCE)
+endif(NOT CMAKE_BUILD_TYPE)
+	  
 
 #set(USE_SYSTEM_YARP OFF CACHE BOOL "Initial cache")
 #set(USE_SYSTEM_KDL_CODYCO OFF CACHE BOOL "Initial cache")
@@ -70,8 +87,14 @@ set(YNL_HYDRA_TOKYO_UNIVERSITY OFF CACHE BOOL "Enable the download and usages of
 set(ADVR-CORE OFF CACHE BOOL "Enable the download and usages of ADVR core packages")
 # CENTAURO EU Project 
 set(CENTAURO_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CENTAURO project")
-# WALKMAN-ROS
-set(WALKMAN-ROS OFF CACHE BOOL "Enable the download and usages of walkman-ros packages")
+# PHOLUS EU Project 
+set(PHOLUS OFF CACHE BOOL "Enable the download and usages of repos related to the PHOLUS project")
+# COMAN
+set(COMAN OFF CACHE BOOL "Enable the download and usages of repos related to the COMAN project")
+# KUKA
+set(KUKA OFF CACHE BOOL "Enable the download and usages of repos related to the KUKA ")
+set(KUKA4LWR OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA 4 LWR project")
+set(KUKAIIWA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA IIWA project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
 # DEPRECATED packages 
@@ -108,11 +131,11 @@ IF(CENTAURO_EU)
 ENDIF(CENTAURO_EU)
 
 # --------------------------------------
-# Compile related WALKMAN-ROS packages
+# Compile related PHOLUS packages
 # --------------------------------------
-IF(WALKMAN-ROS)
-       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/walkman-ros/CMakeLists.txt)
-ENDIF(WALKMAN-ROS)
+IF(PHOLUS)
+       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/pholus/CMakeLists.txt)
+ENDIF(PHOLUS)
 
 # --------------------------------------
 # Compile related COGIMON packages
@@ -128,6 +151,27 @@ IF(VIGIR)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/vigir/CMakeLists.txt)
 ENDIF(VIGIR)
 
+# --------------------------------------
+# Compile related COMAN packages
+# -------------------------------------
+IF(COMAN)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/coman)
+ENDIF(COMAN)
+
+# --------------------------------------
+# Compile related XBOTKUKA packages
+# -------------------------------------
+IF(KUKA)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/kukaprojects)
+ENDIF(KUKA)
+
+IF(KUKA4LWR)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkuka)      
+ENDIF(KUKA4LWR)
+
+IF(KUKAIIWA)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkukaiiwa)
+ENDIF(KUKAIIWA)
 
 # --------------------------------------
 # Compile related WALK-MAN packages
@@ -156,3 +200,6 @@ set_package_properties(PkgConfig PROPERTIES TYPE RUNTIME)
 set_package_properties(Doxygen PROPERTIES TYPE RUNTIME)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
+
+
+#YCM_WRITE_DOT_FILE(ADVR-YCM.dot)
