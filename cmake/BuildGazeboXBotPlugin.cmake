@@ -3,7 +3,6 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotCore QUIET)
-find_or_build_package(XCM QUIET)
 
 ycm_ep_helper(  GazeboXBotPlugin
                 TYPE GIT
@@ -11,6 +10,5 @@ ycm_ep_helper(  GazeboXBotPlugin
                 REPOSITORY ADVRHumanoids/GazeboXBotPlugin.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
-			XBotCore
+                DEPENDS XBotCore
              )

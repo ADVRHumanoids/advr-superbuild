@@ -15,8 +15,7 @@ ycm_ep_helper(  XBotEcat
                 COMPONENT external
 		DEPENDS 
 			soem_advr
-			ecat-master-advr
-			XCM
+			ecat-master-advr			
 			XBotCore
 		CMAKE_CACHE_ARGS -DBUILD_SHARED_LIBS:BOOL=ON
                                  -DENABLE_XENO:BOOL=ON
