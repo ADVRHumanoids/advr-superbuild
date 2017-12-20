@@ -56,7 +56,7 @@ find_or_build_package_with_tag(RobotInterfaceXBotRT ON)
 # ----------------------------
 # Compile XCM
 # ----------------------------
-find_or_build_package_with_tag(XCM ON)
+find_or_build_package_with_tag(XCM OFF)
 
 # -------------------
 # Compile ADVR_shared
@@ -82,7 +82,7 @@ find_or_build_package_with_tag(XBotEthernet OFF)
 # -------------------
 # Compile XBotDummy
 # -------------------
-find_or_build_package_with_tag(XBotDummy ON)
+find_or_build_package_with_tag(XBotDummy OFF)
 
 # -------------------
 # Compile WebGuiDistr
@@ -136,12 +136,12 @@ find_or_build_package_with_tag(trajectory_utils ON)
 # --------------------------------------
 # Compile ADVR_ROS
 # --------------------------------------
-find_or_build_package_with_tag(ADVR_ROS ON)
+find_or_build_package_with_tag(ADVR_ROS OFF)
 
 # --------------------------------------
 # Compile ManipulationPlugin
 # --------------------------------------
-find_or_build_package_with_tag(ManipulationPlugin ON)
+find_or_build_package_with_tag(ManipulationPlugin OFF)
 
 # --------------------------------------
 # gazebo_magnetic_attach_plugin
