@@ -97,6 +97,8 @@ set(KUKA4LWR OFF CACHE BOOL "Enable the download and usages of repos related to 
 set(KUKAIIWA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA IIWA project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
+# Playground Project 
+set(PLAYGROUND OFF CACHE BOOL "trials robots")
 # DEPRECATED packages 
 set(DEPRECATED_PACKAGES OFF CACHE BOOL "Enable the download and usages of repos from all the projects that are considered as DEPRECATED and not longer maintained")
 # VIGIR Project 
@@ -122,6 +124,14 @@ ENDIF(USE_DRC_CORE_PACKAGES)
 IF(ADVR-CORE)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/advr-core/CMakeLists.txt)
 ENDIF(ADVR-CORE)
+
+# --------------------------------------
+# Compile related PLAYGROUND packages
+# --------------------------------------
+IF(PLAYGROUND)
+       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/playground)
+ENDIF(PLAYGROUND)
+
 
 # --------------------------------------
 # Compile related CENTAURO packages
