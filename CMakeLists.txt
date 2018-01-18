@@ -105,8 +105,7 @@ set(DEPRECATED_PACKAGES OFF CACHE BOOL "Enable the download and usages of repos 
 set(VIGIR OFF CACHE BOOL "Enable the download and usages of repos related to vigir robot team")
 # WALK-MAN EU Project 
 set(WALKMAN_EU OFF CACHE BOOL "Enable the download and usages of repos related to the WALK-MAN project")
-#playground
-set(PLAYGROUND OFF CACHE BOOL "Compilation of some miscellaneous packages used as playground")
+
 
 IF(NOT USE_ONLY_OPEN_SOURCE)
 	# set ssh connection with gitlab using rsa keys.
@@ -206,12 +205,6 @@ IF(DEPRECATED_PACKAGES)
        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/DEPRECATED)
 ENDIF(DEPRECATED_PACKAGES)
 
-# --------------------------------------
-# Compile playground packages
-# --------------------------------------
-IF(PLAYGROUND)
-       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/playground)
-ENDIF(PLAYGROUND)
 
 set_package_properties(Git PROPERTIES TYPE RUNTIME)
 set_package_properties(Subversion PROPERTIES TYPE RUNTIME)
