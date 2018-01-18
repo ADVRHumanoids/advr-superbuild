@@ -2,7 +2,7 @@
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(XCM QUIET)
+find_or_build_package(XBotCore QUIET)
 
 ycm_ep_helper(  centauro_bonn_review_plugins
                 TYPE GIT
