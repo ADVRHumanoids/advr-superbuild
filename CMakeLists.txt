@@ -105,6 +105,8 @@ set(DEPRECATED_PACKAGES OFF CACHE BOOL "Enable the download and usages of repos 
 set(VIGIR OFF CACHE BOOL "Enable the download and usages of repos related to vigir robot team")
 # WALK-MAN EU Project 
 set(WALKMAN_EU OFF CACHE BOOL "Enable the download and usages of repos related to the WALK-MAN project")
+#playground
+set(PLAYGROUND OFF CACHE BOOL "Enable the download and usages of plaground repos")
 
 
 IF(NOT USE_ONLY_OPEN_SOURCE)
@@ -118,6 +120,14 @@ ENDIF(NOT USE_ONLY_OPEN_SOURCE)
 IF(USE_DRC_CORE_PACKAGES)
 	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects)
 ENDIF(USE_DRC_CORE_PACKAGES)
+
+# --------------------------------------
+# Compile set of playgroud packages
+# --------------------------------------
+IF(PLAYGROUND)
+        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/playground/CMakeLists.txt)
+ENDIF(PLAYGROUND)
+
 
 # --------------------------------------
 # Compile related ADVR-CORE packages
