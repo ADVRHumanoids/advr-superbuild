@@ -53,11 +53,6 @@ find_or_build_package_with_tag(RobotInterfaceYARP OFF)
 # ----------------------------
 find_or_build_package_with_tag(RobotInterfaceXBotRT ON)
 
-# ----------------------------
-# Compile XCM
-# ----------------------------
-find_or_build_package_with_tag(XCM OFF)
-
 # -------------------
 # Compile ADVR_shared
 # -------------------
