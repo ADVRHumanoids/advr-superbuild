@@ -119,6 +119,11 @@ find_or_build_package_with_tag(XBotGUI OFF)
 find_or_build_package_with_tag(OpenSoT-lite OFF)
 
 # ----------------
+# Compile OpenMpC
+# ----------------
+find_or_build_package_with_tag(OpenMpC OFF)
+
+# ----------------
 # Compile MiscellaneousPlugins
 # ----------------
 find_or_build_package_with_tag(MiscellaneousPlugins OFF)
