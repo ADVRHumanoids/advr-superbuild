@@ -11,6 +11,6 @@ ycm_ep_helper(  qppvm
                 REPOSITORY ADVRHumanoids/qppvm.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
 			OpenSoT-lite
              )

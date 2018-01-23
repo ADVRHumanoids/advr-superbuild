@@ -10,5 +10,5 @@ ycm_ep_helper(  Playback_mat_with_DK
                 REPOSITORY ADVRHumanoids/Playback_mat_with_DK.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
              )

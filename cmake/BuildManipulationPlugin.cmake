@@ -12,6 +12,6 @@ ycm_ep_helper(  ManipulationPlugin
                 REPOSITORY ADVRHumanoids/ManipulationPlugin.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
 			ADVR_ROS
              )

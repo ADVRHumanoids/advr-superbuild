@@ -10,4 +10,4 @@ ycm_ep_helper(  ik_twolayer
                 REPOSITORY ADVRHumanoids/ik_twolayer.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM)
+                DEPENDS XBotCore)

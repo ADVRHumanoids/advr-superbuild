@@ -10,6 +10,6 @@ ycm_ep_helper(  centauro_upperbody_cheng
                 REPOSITORY ADVRHumanoids/centauro_upperbody_cheng.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
 			
              )

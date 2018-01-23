@@ -10,5 +10,5 @@ ycm_ep_helper(  Juan_FBcontrollers
                 REPOSITORY ADVRHumanoids/Juan_FBcontrollers.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )
