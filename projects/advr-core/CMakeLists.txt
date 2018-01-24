@@ -88,6 +88,12 @@ find_or_build_package_with_tag(WebGUIDistr ON)
 # Compile XBotCore
 # ----------------
 find_or_build_package_with_tag(XBotCore ON)
+
+
+# ----------------
+# Compile XBotCore
+# ----------------
+find_or_build_package_with_tag(XBotLogger ON)
 	
 #find_or_build_package(soem_advr)
 #find_or_build_package(walkman-master-ecat)
