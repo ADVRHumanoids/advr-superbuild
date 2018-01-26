@@ -10,5 +10,5 @@ ycm_ep_helper(  TestProjectGiuseppe
                 REPOSITORY ADVRHumanoids/TestProjectGiuseppe.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
             )

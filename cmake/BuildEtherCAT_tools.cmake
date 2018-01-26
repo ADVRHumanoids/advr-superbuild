@@ -11,5 +11,5 @@ ycm_ep_helper(  EtherCAT_tools
                 REPOSITORY advr_humanoids/ethercat_tools.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )

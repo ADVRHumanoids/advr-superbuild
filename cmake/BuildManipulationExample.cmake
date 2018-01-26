@@ -10,6 +10,6 @@ ycm_ep_helper(  ManipulationExample
                 REPOSITORY ADVRHumanoids/ManipulationExample.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
 
              )

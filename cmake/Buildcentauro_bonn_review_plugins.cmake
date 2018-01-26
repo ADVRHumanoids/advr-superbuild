@@ -10,5 +10,5 @@ ycm_ep_helper(  centauro_bonn_review_plugins
                 REPOSITORY advr_humanoids/centauro_bonn_review_plugins.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )

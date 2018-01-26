@@ -88,6 +88,12 @@ find_or_build_package_with_tag(WebGUIDistr ON)
 # Compile XBotCore
 # ----------------
 find_or_build_package_with_tag(XBotCore ON)
+
+
+# ----------------
+# Compile XBotCore
+# ----------------
+find_or_build_package_with_tag(XBotLogger ON)
 	
 #find_or_build_package(soem_advr)
 #find_or_build_package(walkman-master-ecat)
@@ -117,6 +123,11 @@ find_or_build_package_with_tag(XBotGUI OFF)
 # Compile OpenSoT-lite
 # ----------------
 find_or_build_package_with_tag(OpenSoT-lite OFF)
+
+# ----------------
+# Compile OpenMpC
+# ----------------
+find_or_build_package_with_tag(OpenMpC OFF)
 
 # ----------------
 # Compile MiscellaneousPlugins

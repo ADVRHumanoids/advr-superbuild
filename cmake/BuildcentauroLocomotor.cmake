@@ -11,7 +11,7 @@ ycm_ep_helper(  centauroLocomotor
                 REPOSITORY ADVRHumanoids/centauroLocomotor.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
                         OpenSoT-lite
                 )
 

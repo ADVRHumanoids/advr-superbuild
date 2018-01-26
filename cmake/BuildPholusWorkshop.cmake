@@ -12,5 +12,5 @@ ycm_ep_helper(  PholusWorkshop
                 REPOSITORY ADVRHumanoids/PholusWorkshop.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
 	      )

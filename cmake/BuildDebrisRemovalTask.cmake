@@ -9,5 +9,5 @@ ycm_ep_helper(  DebrisRemovalTask
                 REPOSITORY ADVRHumanoids/DebrisRemovalTask.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
             )

@@ -10,5 +10,5 @@ ycm_ep_helper(  locomotion
                 REPOSITORY ADVRHumanoids/locomotion.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
             )

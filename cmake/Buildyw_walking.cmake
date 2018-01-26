@@ -10,5 +10,5 @@ ycm_ep_helper(  yw_walking
                 REPOSITORY ADVRHumanoids/yw_walking.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )

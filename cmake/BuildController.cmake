@@ -10,5 +10,5 @@ ycm_ep_helper(  Controller
                 REPOSITORY ADVRHumanoids/Controller.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )

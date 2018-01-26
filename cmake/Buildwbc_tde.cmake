@@ -10,4 +10,4 @@ ycm_ep_helper(  wbc_tde
                 REPOSITORY jlee/wbc_tde.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM)
+                DEPENDS XBotCore)
