@@ -1,14 +1,12 @@
-# Juan_FBcontrollers
+# QPPVM_RT_plugin
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(XBotCore QUIET)
-
-ycm_ep_helper(  Juan_FBcontrollers
+ycm_ep_helper(  XBotLogger
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/Juan_FBcontrollers.git
+                REPOSITORY ADVRHumanoids/XBotLogger.git
                 TAG master
                 COMPONENT external
-		DEPENDS XBotCore
+		DEPENDS 
              )

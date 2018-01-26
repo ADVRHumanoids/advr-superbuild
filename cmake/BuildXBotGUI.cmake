@@ -13,7 +13,7 @@ ycm_ep_helper(  XBotGUI
                 REPOSITORY ADVRHumanoids/XBotGUI.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
 			XBotCoreModel
 			XBotInterface
 			ADVR_ROS

@@ -10,5 +10,5 @@ ycm_ep_helper(  multi_contacts
                 REPOSITORY ADVRHumanoids/multi_contacts.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )

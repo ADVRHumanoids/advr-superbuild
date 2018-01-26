@@ -10,5 +10,5 @@ ycm_ep_helper(  WBObjectFollower
                 REPOSITORY ADVRHumanoids/WBObjectFollower
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
              )

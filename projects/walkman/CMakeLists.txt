@@ -38,6 +38,7 @@ find_or_build_package_with_tag(Juan_FBcontrollers OFF)
 find_or_build_package_with_tag(yw_walking OFF)
 find_or_build_package_with_tag(DoorOpening OFF)
 find_or_build_package_with_tag(DebrisRemovalTask OFF)
+find_or_build_package_with_tag(ValveTask OFF)
 find_or_build_package_with_tag(multi_contacts OFF)
 
 

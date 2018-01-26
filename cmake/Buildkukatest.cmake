@@ -9,5 +9,5 @@ ycm_ep_helper(  kukatest
                 REPOSITORY ADVRHumanoids/kukatest.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM
+                DEPENDS XBotCore
             )

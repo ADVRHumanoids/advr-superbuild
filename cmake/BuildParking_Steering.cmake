@@ -10,4 +10,4 @@ ycm_ep_helper(  Parking_Steering
                 REPOSITORY ADVRHumanoids/Parking_Steering.git
                 TAG master
                 COMPONENT external
-                DEPENDS XCM)
+                DEPENDS XBotCore)

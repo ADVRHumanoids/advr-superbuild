@@ -10,6 +10,6 @@ ycm_ep_helper(DoorOpening
                                REPOSITORY ADVRHumanoids/DoorOpening.git 
                                TAG master
                                COMPONENT external
-                               DEPENDS XCM
+                               DEPENDS XBotCore
                                        
 	     )

@@ -10,5 +10,5 @@ ycm_ep_helper(  ArtificialPotentialField
 		REPOSITORY ADVRHumanoids/ArtificialPotentialField
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )

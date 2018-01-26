@@ -10,5 +10,5 @@ ycm_ep_helper(  chengxu_walking
                 REPOSITORY ADVRHumanoids/chengxu_walking.git
                 TAG master
                 COMPONENT external
-		DEPENDS XCM
+		DEPENDS XBotCore
              )
