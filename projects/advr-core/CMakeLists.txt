@@ -59,6 +59,11 @@ find_or_build_package_with_tag(RobotInterfaceXBotRT ON)
 find_or_build_package_with_tag(ADVR_shared OFF)
 
 # -------------------
+# Compile robot_shared
+# -------------------
+find_or_build_package_with_tag(robot_shared OFF)
+
+# -------------------
 # Compile advr_humanoids_common_utils
 # -------------------
 find_or_build_package_with_tag(advr_humanoids_common_utils OFF)
