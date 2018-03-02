@@ -179,3 +179,7 @@ find_or_build_package_with_tag(Playback_mat_with_DK OFF)
 # --------------------------------------
 find_or_build_package_with_tag(gazebo_models OFF)
 
+# --------------------------------------
+# osqp
+# --------------------------------------
+find_or_build_package_with_tag(osqp OFF)
