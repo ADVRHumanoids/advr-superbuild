@@ -123,7 +123,12 @@ IF(NOT USE_ONLY_OPEN_SOURCE)
         # --------------------------------------
         # Compile iit-bigman-ros-pkg
         # --------------------------------------
-        find_or_build_package_with_tag(iit-bigman-ros-pkg ON)
+        find_or_build_package_with_tag(iit-bigman-ros-pkg OFF)
+	
+	# --------------------------------------
+        # Compile iit-walkman-ros-pkg
+        # --------------------------------------
+        find_or_build_package_with_tag(iit-walkman-ros-pkg ON)
         
         # --------------------------------------
         # Compile walking
