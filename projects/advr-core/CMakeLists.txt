@@ -189,3 +189,7 @@ find_or_build_package_with_tag(osqp OFF)
 # iDynTree-3
 # --------------------------------------
 find_or_build_package_with_tag(iDynTree-3 OFF)
+
+# CartesianInterface
+# --------------------------------------
+find_or_build_package_with_tag(CartesianInterface OFF)
