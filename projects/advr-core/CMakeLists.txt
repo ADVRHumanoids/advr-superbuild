@@ -174,3 +174,7 @@ find_or_build_package_with_tag(nlopt OFF)
 # --------------------------------------
 find_or_build_package_with_tag(Playback_mat_with_DK OFF)
 
+# --------------------------------------
+# iDynTree-3
+# --------------------------------------
+find_or_build_package_with_tag(iDynTree-3 OFF)
