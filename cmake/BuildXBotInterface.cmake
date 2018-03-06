@@ -3,7 +3,6 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotCoreModel QUIET)
-find_or_build_package(sharedlibpp QUIET)
 find_or_build_package(bprinter QUIET)
 
 ycm_ep_helper(  XBotInterface
@@ -13,7 +12,6 @@ ycm_ep_helper(  XBotInterface
                 TAG master
                 COMPONENT external
                 DEPENDS XBotCoreModel
-			sharedlibpp
 			bprinter
 		CMAKE_CACHE_ARGS -DBUILD_TESTS:BOOL=false
 	     )
