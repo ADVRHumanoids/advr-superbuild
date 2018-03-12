@@ -18,6 +18,11 @@ find_or_build_package_with_tag(srdfdom_advr ON)
 # ---------------------
 find_or_build_package_with_tag(XBotCoreModel ON)
 
+# ------------------
+# Compile sharedlibpp
+# ------------------
+find_or_build_package_with_tag(sharedlibpp ON)
+
 # -------------------------
 # Compile RobotInterfaceROS
 # -------------------------
@@ -170,6 +175,8 @@ find_or_build_package_with_tag(nlopt OFF)
 find_or_build_package_with_tag(Playback_mat_with_DK OFF)
 
 # --------------------------------------
+
+# --------------------------------------
 # gazebo_models
 # --------------------------------------
 find_or_build_package_with_tag(gazebo_models OFF)
@@ -178,3 +185,11 @@ find_or_build_package_with_tag(gazebo_models OFF)
 # osqp
 # --------------------------------------
 find_or_build_package_with_tag(osqp OFF)
+
+# iDynTree-3
+# --------------------------------------
+find_or_build_package_with_tag(iDynTree-3 OFF)
+
+# CartesianInterface
+# --------------------------------------
+find_or_build_package_with_tag(CartesianInterface OFF)
