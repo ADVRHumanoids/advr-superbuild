@@ -100,6 +100,13 @@ find_or_build_package_with_tag(centauro_upperbody_cheng OFF)
 
 find_or_build_package_with_tag(iXSens OFF)
 
+
+# --------------------------------------
+# Compile torqueWBC
+# --------------------------------------
+
+find_or_build_package_with_tag(torqueWBC OFF)
+
 # --------------------------------------
 # Compile CentauroAlexUDP
 # --------------------------------------
