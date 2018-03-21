@@ -2,7 +2,7 @@
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(srdfdom_advr QUIET)
+find_or_build_package(XBotInterface QUIET)
 find_or_build_package(iDynTree QUIET)
 
 ycm_ep_helper(  advr_humanoids_common_utils
@@ -10,7 +10,7 @@ ycm_ep_helper(  advr_humanoids_common_utils
                 STYLE GITLAB_ADVRCLOUD
                 REPOSITORY advr_humanoids/advr_humanoids_common_utils.git
                 TAG master
-                DEPENDS srdfdom_advr
+                DEPENDS XBotInterface
 			iDynTree
                 COMPONENT external
             )
