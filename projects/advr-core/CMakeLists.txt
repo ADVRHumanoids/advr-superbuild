@@ -11,17 +11,17 @@ find_or_build_package_with_tag(XBotInterface ON)
 # ---------------------
 # Compile srdfdom_advr
 # ---------------------
-find_or_build_package_with_tag(srdfdom_advr ON)
+find_or_build_package_with_tag(srdfdom_advr OFF)
 
 # ---------------------
 # Compile XBotCoreModel
 # ---------------------
-find_or_build_package_with_tag(XBotCoreModel ON)
+find_or_build_package_with_tag(XBotCoreModel OFF)
 
 # ------------------
 # Compile sharedlibpp
 # ------------------
-find_or_build_package_with_tag(sharedlibpp ON)
+find_or_build_package_with_tag(sharedlibpp OFF)
 
 # -------------------------
 # Compile RobotInterfaceROS
