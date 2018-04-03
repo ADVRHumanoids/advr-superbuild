@@ -125,9 +125,9 @@ find_or_build_package_with_tag(XBotYARP OFF)
 find_or_build_package_with_tag(XBotGUI OFF)
 
 # ----------------
-# Compile OpenSoT-lite
+# Compile OpenSoT
 # ----------------
-find_or_build_package_with_tag(OpenSoT-lite OFF)
+find_or_build_package_with_tag(OpenSoT OFF)
 
 # ----------------
 # Compile OpenMpC
@@ -142,7 +142,7 @@ find_or_build_package_with_tag(MiscellaneousPlugins OFF)
 # --------------------------------------
 # Compile trajectory_utils
 # --------------------------------------
-find_or_build_package_with_tag(trajectory_utils ON)
+find_or_build_package_with_tag(trajectory_utils OFF)
 
 # --------------------------------------
 # Compile ADVR_ROS
