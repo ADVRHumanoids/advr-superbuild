@@ -130,3 +130,5 @@ find_or_build_package_with_tag(compliant_stabilizer OFF)
 find_or_build_package_with_tag(RobotInterfaceOROCOS OFF)
 
 find_or_build_package_with_tag(cogimon_tools OFF)
+
+find_or_build_package_with_tag(XBotOrocosRTT OFF) 
