@@ -4,6 +4,8 @@ ROBOTOLOGY_ROOT=$(dirname $(readlink --canonicalize --no-newline $BASH_SOURCE))
 
 export ROBOTOLOGY_ROOT
 
+export XBOT_ROOT=$ROBOTOLOGY_ROOT
+
 if [ -f $ROBOTOLOGY_ROOT/build/active_profile ]; then
     source $ROBOTOLOGY_ROOT/build/active_profile
 else
