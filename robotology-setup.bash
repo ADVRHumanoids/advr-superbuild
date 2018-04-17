@@ -258,5 +258,4 @@ else
         export XBOT_CONFIG=
 fi
 
-
-
+export XBOT_PATH=$LD_LIBRARY_PATH
