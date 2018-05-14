@@ -120,6 +120,7 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg/walkman_gazebo/database
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/gazebo_models
+pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/external/srcsim/models
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
