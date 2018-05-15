@@ -8,7 +8,6 @@ set(paramHelp_TAG de9f652)
 set(GazeboYARPPlugins_TAG b843248)
 set(iDynTree_TAG f0346c1)
 set(idynutils_TAG ba98bc36)
-set(OpenSoT_TAG c46cc3b409564)
 set(GYM_TAG 825a36ed7ae)
 set(fcl_TAG 54e9619bc2b)
 
