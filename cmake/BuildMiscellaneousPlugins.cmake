@@ -3,7 +3,7 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotCore QUIET)
-find_or_build_package(OpenSoT-lite QUIET)
+find_or_build_package(OpenSoT QUIET)
 
 ycm_ep_helper(  MiscellaneousPlugins
                 TYPE GIT
@@ -12,5 +12,5 @@ ycm_ep_helper(  MiscellaneousPlugins
                 TAG xbot3.0
                 COMPONENT external
 		DEPENDS XBotCore
-			OpenSoT-lite
+			OpenSoT
              )
