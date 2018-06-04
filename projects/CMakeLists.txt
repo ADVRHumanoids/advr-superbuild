@@ -8,7 +8,6 @@ IF(SUPERBUILD_DRC_CORE)
     find_or_build_package(YARP)
     find_or_build_package(iDynTree)
     find_or_build_package(idynutils)
-    find_or_build_package(OpenSoT)
     find_or_build_package_with_tag(GYM OFF)
     find_or_build_package_with_tag(paramHelp OFF)
 
