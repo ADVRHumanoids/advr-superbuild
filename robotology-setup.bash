@@ -187,6 +187,7 @@ fi
 
 
 
+
 # vigir stuffs
 if [ -d $ROBOTOLOGY_ROOT/vigir/vigir_footstep_planning_basics ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/vigir/vigir_footstep_planning_basics
