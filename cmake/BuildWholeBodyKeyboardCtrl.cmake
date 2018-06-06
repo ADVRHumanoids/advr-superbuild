@@ -2,7 +2,7 @@
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(OpenSoT-lite QUIET)
+find_or_build_package(OpenSoT QUIET)
 
 ycm_ep_helper(  WholeBodyKeyboardCtrl
                 TYPE GIT
@@ -10,5 +10,5 @@ ycm_ep_helper(  WholeBodyKeyboardCtrl
                 REPOSITORY ADVRHumanoids/WholeBodyKeyboardCtrl.git
                 TAG master
                 COMPONENT external
-		DEPENDS OpenSoT-lite
+		DEPENDS OpenSoT
              )

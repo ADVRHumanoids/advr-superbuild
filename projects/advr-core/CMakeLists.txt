@@ -4,6 +4,11 @@ cmake_minimum_required(VERSION 2.8.12)
 set(YCM_GIT_GITLAB_ADVRCLOUD_BASE_ADDRESS "ssh://git@gitlab.advrcloud.iit.it/" CACHE STRING "Address to use for ADVR cloud Gitlab git repositories" FORCE)
 
 # ---------------------
+# Compile OpenSoT
+# ---------------------
+find_or_build_package_with_tag(OpenSoT ON)
+
+# ---------------------
 # Compile XBotInterface
 # ---------------------
 find_or_build_package_with_tag(XBotInterface ON)
@@ -56,7 +61,7 @@ find_or_build_package_with_tag(RobotInterfaceXBotRT ON)
 # -------------------
 # Compile ADVR_shared
 # -------------------
-find_or_build_package_with_tag(ADVR_shared OFF)
+find_or_build_package_with_tag(ADVR_shared ON)
 
 # -------------------
 # Compile robot_shared
@@ -125,11 +130,6 @@ find_or_build_package_with_tag(XBotYARP OFF)
 find_or_build_package_with_tag(XBotGUI OFF)
 
 # ----------------
-# Compile OpenSoT
-# ----------------
-find_or_build_package_with_tag(OpenSoT OFF)
-
-# ----------------
 # Compile OpenMpC
 # ----------------
 find_or_build_package_with_tag(OpenMpC OFF)
@@ -142,7 +142,7 @@ find_or_build_package_with_tag(MiscellaneousPlugins OFF)
 # --------------------------------------
 # Compile trajectory_utils
 # --------------------------------------
-find_or_build_package_with_tag(trajectory_utils OFF)
+find_or_build_package_with_tag(trajectory_utils ON)
 
 # --------------------------------------
 # Compile ADVR_ROS

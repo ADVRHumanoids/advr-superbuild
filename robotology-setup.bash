@@ -4,6 +4,8 @@ ROBOTOLOGY_ROOT=$(dirname $(readlink --canonicalize --no-newline $BASH_SOURCE))
 
 export ROBOTOLOGY_ROOT
 
+export XBOT_ROOT=$ROBOTOLOGY_ROOT
+
 if [ -f $ROBOTOLOGY_ROOT/build/active_profile ]; then
     source $ROBOTOLOGY_ROOT/build/active_profile
 else
@@ -118,6 +120,7 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg/walkman_gazebo/database
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/gazebo_models
+pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/external/srcsim/models
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
@@ -181,6 +184,7 @@ fi
 if [ -d ${ROBOTOLOGY_ROOT}/robots/gazebo_ros_demos ]; then
        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/gazebo_ros_demos
 fi
+
 
 
 
@@ -256,5 +260,4 @@ else
         export XBOT_CONFIG=
 fi
 
-
-
+export XBOT_PATH=$LD_LIBRARY_PATH
