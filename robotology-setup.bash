@@ -37,9 +37,9 @@ if [ -f ${ROBOTOLOGY_ROOT}/external/moveit/install/setup.bash ]; then
     source ${ROBOTOLOGY_ROOT}/external/moveit/install/setup.bash
 fi
 
-if [ -d /usr/xenomai/include/cobalt/ ]; then
-    pathadd CPATH /usr/xenomai/include/cobalt/
-fi
+#if [ -d /usr/xenomai/include/cobalt/ ]; then
+#    pathadd CPATH /usr/xenomai/include/cobalt/
+#fi
 
 #orocos
 if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
