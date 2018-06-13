@@ -2,6 +2,7 @@
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
+find_or_build_package(XBotLogger QUIET)
 find_or_build_package(bprinter QUIET)
 
 ycm_ep_helper(  XBotInterface
@@ -10,6 +11,6 @@ ycm_ep_helper(  XBotInterface
                 REPOSITORY ADVRHumanoids/XBotInterface.git
                 TAG master
                 COMPONENT external
-                DEPENDS bprinter
+                DEPENDS bprinter XBotLogger
 		CMAKE_CACHE_ARGS -DBUILD_TESTS:BOOL=false
 	     )
