@@ -44,4 +44,5 @@ ycm_ep_helper(  YARP
                                  -DYARP_COMPILE_BINDINGS:BOOL=OFF
                                  -DCREATE_PYTHON:BOOL=OFF
                                  -DCREATE_GUIS:BOOL=ON
+                                 -DSKIP_ACE:BOOL=ON
                 )
