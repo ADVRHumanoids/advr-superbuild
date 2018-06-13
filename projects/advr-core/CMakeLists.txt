@@ -193,6 +193,10 @@ find_or_build_package_with_tag(osqp OFF)
 # --------------------------------------
 find_or_build_package_with_tag(iDynTree-3 OFF)
 
+# fcl
+# --------------------------------------
+find_or_build_package_with_tag(fcl OFF)
+
 # CartesianInterface
 # --------------------------------------
 find_or_build_package_with_tag(CartesianInterface OFF)
