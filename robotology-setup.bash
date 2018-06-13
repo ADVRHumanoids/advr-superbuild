@@ -189,6 +189,10 @@ if [ -d ${ROBOTOLOGY_ROOT}/robots/gazebo_ros_demos ]; then
        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/gazebo_ros_demos
 fi
 
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg
+fi
+
 
 
 
