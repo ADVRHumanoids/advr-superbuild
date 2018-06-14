@@ -5,6 +5,7 @@ include(FindOrBuildPackage)
 find_package(OROCOS-RTT QUIET)
 find_package(rtt-core-extensions QUIET)
 find_package(OpenSoT QUIET)
+find_package(RobotInterfaceOROCOS QUIET)
 
 
 ycm_ep_helper(  orocos_opensot_ik
@@ -14,5 +15,7 @@ ycm_ep_helper(  orocos_opensot_ik
                 TAG master
                 COMPONENT external
                 DEPENDS rtt-core-extensions 
+			OROCOS-RTT
                         OpenSoT
+                        RobotInterfaceOROCOS
             )
