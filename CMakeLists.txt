@@ -95,6 +95,8 @@ set(COMAN OFF CACHE BOOL "Enable the download and usages of repos related to the
 set(KUKA OFF CACHE BOOL "Enable the download and usages of repos related to the KUKA ")
 set(KUKA4LWR OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA 4 LWR project")
 set(KUKAIIWA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA IIWA project")
+# FRANKA
+set(FRANKA_PANDA OFF CACHE BOOL "Enable the download and usages of repos related to the XBotPanda FRANKA project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
 # Playground Project 
@@ -193,6 +195,13 @@ ENDIF(KUKA4LWR)
 IF(KUKAIIWA)
       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotkukaiiwa)
 ENDIF(KUKAIIWA)
+
+# --------------------------------------
+# Compile related XBotPanda packages
+# -------------------------------------
+IF(FRANKA_PANDA)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotpanda)
+ENDIF(FRANKA_PANDA)
 
 # --------------------------------------
 # Compile related WALK-MAN packages
