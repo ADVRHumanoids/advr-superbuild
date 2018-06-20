@@ -17,7 +17,7 @@ endif()
 ycm_ep_helper(  OpenSoT TYPE GIT
                 STYLE GITHUB
                 REPOSITORY robotology-playground/OpenSoT.git
-                TAG devel
+                TAG master
                 COMPONENT external
                 DEPENDS XBotInterface
                 CMAKE_CACHE_ARGS -DOPENSOT_COMPILE_TESTS:BOOL=OFF
