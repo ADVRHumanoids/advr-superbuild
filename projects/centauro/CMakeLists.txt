@@ -68,6 +68,11 @@ find_or_build_package_with_tag(QPOases OFF)
 # ---------------------
 find_or_build_package_with_tag(bi-man2 OFF)
 
+# ---------------------
+# Compile traj6d 
+# ---------------------
+find_or_build_package_with_tag(traj6d OFF)
+
 #-----------------------
 #centauroLocomotor
 #----------------------
