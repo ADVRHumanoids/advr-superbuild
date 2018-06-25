@@ -95,6 +95,8 @@ set(COMAN OFF CACHE BOOL "Enable the download and usages of repos related to the
 set(KUKA OFF CACHE BOOL "Enable the download and usages of repos related to the KUKA ")
 set(KUKA4LWR OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA 4 LWR project")
 set(KUKAIIWA OFF CACHE BOOL "Enable the download and usages of repos related to the XBOTKUKA IIWA project")
+# FRANKA
+set(FRANKA_PANDA OFF CACHE BOOL "Enable the download and usages of repos related to the XBotPanda FRANKA project")
 # COGIMON EU Project 
 set(COGIMON_EU OFF CACHE BOOL "Enable the download and usages of repos related to the CoGiMon project")
 # Playground Project 
@@ -107,6 +109,8 @@ set(VIGIR OFF CACHE BOOL "Enable the download and usages of repos related to vig
 set(WALKMAN_EU OFF CACHE BOOL "Enable the download and usages of repos related to the WALK-MAN project")
 #playground
 set(PLAYGROUND OFF CACHE BOOL "Enable the download and usages of plaground repos")
+#inail
+set(INAIL OFF CACHE BOOL "Enable the download and usages of INAIL related repos")
 
 
 IF(NOT USE_ONLY_OPEN_SOURCE)
@@ -195,6 +199,13 @@ IF(KUKAIIWA)
 ENDIF(KUKAIIWA)
 
 # --------------------------------------
+# Compile related XBotPanda packages
+# -------------------------------------
+IF(FRANKA_PANDA)
+      add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbotpanda)
+ENDIF(FRANKA_PANDA)
+
+# --------------------------------------
 # Compile related WALK-MAN packages
 # --------------------------------------
 IF(WALKMAN_EU)
@@ -214,6 +225,13 @@ ENDIF(YNL_HYDRA_TOKYO_UNIVERSITY)
 IF(DEPRECATED_PACKAGES)
        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/DEPRECATED)
 ENDIF(DEPRECATED_PACKAGES)
+
+# --------------------------------------
+# Compile related inail packages
+# --------------------------------------
+IF(INAIL)
+       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/inail)
+ENDIF(INAIL)
 
 
 set_package_properties(Git PROPERTIES TYPE RUNTIME)

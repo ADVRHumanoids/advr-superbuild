@@ -9,7 +9,7 @@ set(YCM_GIT_GITLAB_ADVR_BASE_ADDRESS "ssh://git@gitlab.advr.iit.it/" CACHE STRIN
 # ---------------------
 # Compile OpenSoT
 # ---------------------
-find_or_build_package_with_tag(OpenSoT ON)
+find_or_build_package_with_tag(OpenSoT OFF)
 
 # ---------------------
 # Compile XBotInterface
@@ -192,6 +192,10 @@ find_or_build_package_with_tag(osqp OFF)
 # iDynTree-3
 # --------------------------------------
 find_or_build_package_with_tag(iDynTree-3 OFF)
+
+# fcl
+# --------------------------------------
+find_or_build_package_with_tag(fcl OFF)
 
 # CartesianInterface
 # --------------------------------------

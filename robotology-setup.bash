@@ -148,6 +148,11 @@ if [ -d $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg ]; then
 	 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg/bigman_gazebo/database
 fi
 
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-panda-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-panda-ros-pkg
+fi
+
+
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg
 	# pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg/kuka_gazebo/database
@@ -187,6 +192,10 @@ fi
 
 if [ -d ${ROBOTOLOGY_ROOT}/robots/gazebo_ros_demos ]; then
        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/gazebo_ros_demos
+fi
+
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg
 fi
 
 

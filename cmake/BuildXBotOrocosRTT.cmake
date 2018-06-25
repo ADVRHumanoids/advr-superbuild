@@ -3,7 +3,7 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_package(OROCOS-RTT QUIET)
-find_package(XBotLogger QUIET)
+find_package(RST_RT QUIET)
 
 ycm_ep_helper(  XBotOrocosRTT
                 TYPE GIT
@@ -11,6 +11,5 @@ ycm_ep_helper(  XBotOrocosRTT
                 REPOSITORY ADVRHumanoids/XBotOrocosRTT
                 TAG master
                 COMPONENT external
-                DEPENDS OROCOS-RTT
-                        XBotLogger
+        	DEPENDS OROCOS-RTT RST_RT	
              )
