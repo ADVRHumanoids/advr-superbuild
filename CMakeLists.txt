@@ -111,7 +111,8 @@ set(WALKMAN_EU OFF CACHE BOOL "Enable the download and usages of repos related t
 set(PLAYGROUND OFF CACHE BOOL "Enable the download and usages of plaground repos")
 #inail
 set(INAIL OFF CACHE BOOL "Enable the download and usages of INAIL related repos")
-
+#xbot build
+set(DEB_XBOT_BUILD OFF CACHE BOOL "Enable the download of the XBot DEB build repos")
 
 IF(NOT USE_ONLY_OPEN_SOURCE)
 	# set ssh connection with gitlab using rsa keys.
@@ -139,6 +140,10 @@ ENDIF(PLAYGROUND)
 IF(ADVR-CORE)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/advr-core/CMakeLists.txt)
 ENDIF(ADVR-CORE)
+
+IF(DEB_XBOT_BUILD)
+       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbot_build/CMakeLists.txt)
+ENDIF(DEB_XBOT_BUILD)
 
 # --------------------------------------
 # Compile related PLAYGROUND packages
