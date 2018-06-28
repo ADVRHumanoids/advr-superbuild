@@ -37,6 +37,10 @@ if [ -f ${ROBOTOLOGY_ROOT}/external/moveit/install/setup.bash ]; then
     source ${ROBOTOLOGY_ROOT}/external/moveit/install/setup.bash
 fi
 
+#if [ -d /usr/xenomai/include/cobalt/ ]; then
+#    pathadd CPATH /usr/xenomai/include/cobalt/
+#fi
+
 #orocos
 if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
        source ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash
@@ -67,7 +71,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
 		if [ ${OROCOS_TARGET} = 'xenomai' ]; then 	
 			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/orocos_ros_joint_state_publisher
 		else
-       		pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/orocos_ros_joint_state_publisher
+       			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/orocos_ros_joint_state_publisher
 		fi
        fi 
        
@@ -75,7 +79,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
 		if [ ${OROCOS_TARGET} = 'xenomai' ]; then 	
 			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/rtt_coman
 		else
-       		pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/rtt_coman
+       			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/rtt_coman
 		fi
        fi
 
@@ -83,7 +87,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
               if [ ${OROCOS_TARGET} = 'xenomai' ]; then 	
 			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/ros_orocos_joints_gui
 		else
-       		pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/ros_orocos_joints_gui
+       			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/ros_orocos_joints_gui
 		fi
        fi
 
@@ -144,6 +148,11 @@ if [ -d $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg ]; then
 	 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg/bigman_gazebo/database
 fi
 
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-panda-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-panda-ros-pkg
+fi
+
+
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg
 	# pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg/kuka_gazebo/database
@@ -184,6 +193,11 @@ fi
 if [ -d ${ROBOTOLOGY_ROOT}/robots/gazebo_ros_demos ]; then
        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/gazebo_ros_demos
 fi
+
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg
+fi
+
 
 
 
@@ -243,6 +257,7 @@ source ${ROBOTOLOGY_ROOT}/scripts/superbuild.profile
 
 alias set_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/set_xbot_config.sh"
 alias get_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/get_xbot_config.sh"
+alias open_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/open_xbot_config.sh"
 
 # add robotology folder for robot models
 if [ -d $ROBOTOLOGY_ROOT/build/install/share/robots ]; then
