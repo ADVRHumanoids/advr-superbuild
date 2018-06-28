@@ -9,7 +9,7 @@ set(YCM_GIT_GITLAB_ADVR_BASE_ADDRESS "ssh://git@gitlab.advr.iit.it/" CACHE STRIN
 # ---------------------
 # Compile OpenSoT
 # ---------------------
-find_or_build_package_with_tag(OpenSoT OFF)
+find_or_build_package_with_tag(OpenSoT ON)
 
 # ---------------------
 # Compile XBotInterface
