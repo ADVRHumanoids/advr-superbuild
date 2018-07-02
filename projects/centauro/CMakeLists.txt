@@ -130,6 +130,8 @@ find_or_build_package_with_tag(centauro_tools OFF)
 
 find_or_build_package_with_tag(WBObjectFollower OFF)
 
+find_or_build_package_with_tag(CentauroDemo OFF)
+
 # ---------------------
 # Compile Yangwei Locomotion module
 # ---------------------
