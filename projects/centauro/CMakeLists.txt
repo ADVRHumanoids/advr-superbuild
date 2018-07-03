@@ -68,6 +68,11 @@ find_or_build_package_with_tag(QPOases OFF)
 # ---------------------
 find_or_build_package_with_tag(bi-man2 OFF)
 
+# ---------------------
+# Compile traj6d 
+# ---------------------
+find_or_build_package_with_tag(traj6d OFF)
+
 #-----------------------
 #centauroLocomotor
 #----------------------
@@ -124,6 +129,8 @@ find_or_build_package_with_tag(CentauroAlexUDP OFF)
 find_or_build_package_with_tag(centauro_tools OFF)
 
 find_or_build_package_with_tag(WBObjectFollower OFF)
+
+find_or_build_package_with_tag(CentauroDemo OFF)
 
 # ---------------------
 # Compile Yangwei Locomotion module

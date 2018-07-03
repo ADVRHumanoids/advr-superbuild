@@ -1,13 +1,13 @@
-# ecat-master-advr
+# ecat_master_advr
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(soem_advr QUIET)
 
-ycm_ep_helper(  ecat-master-advr
+ycm_ep_helper(  ecat_master_advr
                 TYPE GIT
-                STYLE GITLAB_ADVRCLOUD
-                REPOSITORY amargan/ecat_master_advr.git
+                STYLE GITLAB_ADVR
+                REPOSITORY xeno-ecat/ecat_master_advr.git
                 TAG xeno-3
                 COMPONENT external
 		DEPENDS soem_advr

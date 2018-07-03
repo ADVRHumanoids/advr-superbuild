@@ -9,5 +9,5 @@ ycm_ep_helper(  ADVR_shared
                 TAG master
                 COMPONENT configs
 		BUILD_COMMAND ""
-		INSTALL_COMMAND ""
+		#INSTALL_COMMAND ""
             )
