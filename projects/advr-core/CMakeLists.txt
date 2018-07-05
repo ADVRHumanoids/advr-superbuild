@@ -200,3 +200,7 @@ find_or_build_package_with_tag(fcl OFF)
 # CartesianInterface
 # --------------------------------------
 find_or_build_package_with_tag(CartesianInterface OFF)
+
+# RMLTypeII
+# --------------------------------------
+find_or_build_package_with_tag(RMLTypeII OFF)
