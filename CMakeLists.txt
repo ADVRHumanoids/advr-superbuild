@@ -113,6 +113,8 @@ set(PLAYGROUND OFF CACHE BOOL "Enable the download and usages of plaground repos
 set(INAIL OFF CACHE BOOL "Enable the download and usages of INAIL related repos")
 #xbot build
 set(DEB_XBOT_BUILD OFF CACHE BOOL "Enable the download of the XBot DEB build repos")
+#tom
+set(TOM OFF CACHE BOOL "Enable the download of the TOM related repos")
 
 IF(NOT USE_ONLY_OPEN_SOURCE)
 	# set ssh connection with gitlab using rsa keys.
@@ -237,6 +239,13 @@ ENDIF(DEPRECATED_PACKAGES)
 IF(INAIL)
        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/inail)
 ENDIF(INAIL)
+
+# --------------------------------------
+# Compile related inail packages
+# --------------------------------------
+IF(TOM)
+       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/tom)
+ENDIF(TOM)
 
 
 set_package_properties(Git PROPERTIES TYPE RUNTIME)
