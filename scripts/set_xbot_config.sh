@@ -21,8 +21,8 @@ fi
 #CONFIG=`find $input1 -name "*.yaml" -exec basename {} \;`
 CONFIG=`readlink -f $input1`
 
-echo "XBOT_CONFIG: $CONFIG" > $ROBOTOLOGY_ROOT/build/install/configs/active_config.yaml
-echo "XBOT_CONFIG: $CONFIG"
+echo "$CONFIG" > $XBOT_CONFIG
+echo "$CONFIG"
 
 # come back to the dir where the script was executed
 cd $actual_dir

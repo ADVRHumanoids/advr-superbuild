@@ -4,6 +4,8 @@ ROBOTOLOGY_ROOT=$(dirname $(readlink --canonicalize --no-newline $BASH_SOURCE))
 
 export ROBOTOLOGY_ROOT
 
+export XBOT_ROOT=$ROBOTOLOGY_ROOT
+
 if [ -f $ROBOTOLOGY_ROOT/build/active_profile ]; then
     source $ROBOTOLOGY_ROOT/build/active_profile
 else
@@ -35,6 +37,10 @@ if [ -f ${ROBOTOLOGY_ROOT}/external/moveit/install/setup.bash ]; then
     source ${ROBOTOLOGY_ROOT}/external/moveit/install/setup.bash
 fi
 
+#if [ -d /usr/xenomai/include/cobalt/ ]; then
+#    pathadd CPATH /usr/xenomai/include/cobalt/
+#fi
+
 #orocos
 if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
        source ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash
@@ -65,7 +71,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
 		if [ ${OROCOS_TARGET} = 'xenomai' ]; then 	
 			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/orocos_ros_joint_state_publisher
 		else
-       		pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/orocos_ros_joint_state_publisher
+       			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/orocos_ros_joint_state_publisher
 		fi
        fi 
        
@@ -73,7 +79,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
 		if [ ${OROCOS_TARGET} = 'xenomai' ]; then 	
 			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/rtt_coman
 		else
-       		pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/rtt_coman
+       			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/rtt_coman
 		fi
        fi
 
@@ -81,7 +87,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
               if [ ${OROCOS_TARGET} = 'xenomai' ]; then 	
 			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/ros_orocos_joints_gui
 		else
-       		pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/ros_orocos_joints_gui
+       			pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/ros_orocos_joints_gui
 		fi
        fi
 
@@ -118,6 +124,7 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg/walkman_gazebo/database
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/gazebo_models
+pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/external/srcsim/models
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
@@ -140,6 +147,11 @@ if [ -d $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg
 	 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-bigman-ros-pkg/bigman_gazebo/database
 fi
+
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-panda-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-panda-ros-pkg
+fi
+
 
 if [ -d $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-kuka_lwr-ros-pkg
@@ -181,6 +193,11 @@ fi
 if [ -d ${ROBOTOLOGY_ROOT}/robots/gazebo_ros_demos ]; then
        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/gazebo_ros_demos
 fi
+
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-flying_arm-ros-pkg
+fi
+
 
 
 
@@ -238,9 +255,6 @@ fi
 alias superbuild=". ${ROBOTOLOGY_ROOT}/scripts/superbuild.sh"
 source ${ROBOTOLOGY_ROOT}/scripts/superbuild.profile
 
-alias set_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/set_xbot_config.sh"
-alias get_xbot_config=". ${ROBOTOLOGY_ROOT}/scripts/get_xbot_config.sh"
-
 # add robotology folder for robot models
 if [ -d $ROBOTOLOGY_ROOT/build/install/share/robots ]; then
 	export ROBOTOLOGY_ROBOTS=$ROBOTOLOGY_ROOT/build/install/share/robots
@@ -256,5 +270,4 @@ else
         export XBOT_CONFIG=
 fi
 
-
-
+export XBOT_PATH=$LD_LIBRARY_PATH

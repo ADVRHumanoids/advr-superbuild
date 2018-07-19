@@ -134,5 +134,3 @@ find_or_build_package_with_tag(cogimon_tools OFF)
 find_or_build_package_with_tag(XBotOrocosRTT OFF) 
 
 find_or_build_package_with_tag(RDC2018 OFF)
-
-find_or_build_package_with_tag(CBCBackEnd OFF)

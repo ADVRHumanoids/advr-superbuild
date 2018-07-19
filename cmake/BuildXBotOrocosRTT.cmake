@@ -1,16 +1,15 @@
-# rtt-gazebo-robot-sim
+# XBotOrocosRTT
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_package(OROCOS-RTT QUIET)
 find_package(RST_RT QUIET)
-find_package(XBotInterface QUIET)
 
-ycm_ep_helper(  rtt-gazebo-robot-sim
+ycm_ep_helper(  XBotOrocosRTT
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY cogimon/rtt-gazebo-robot-sim.git
+                REPOSITORY ADVRHumanoids/XBotOrocosRTT
                 TAG master
                 COMPONENT external
-                DEPENDS RST_RT OROCOS-RTT XBotInterface
-            )
+        	DEPENDS OROCOS-RTT RST_RT	
+             )

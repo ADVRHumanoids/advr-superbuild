@@ -1,14 +1,12 @@
-# QPPVM_RT_plugin
+# RDC2018
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(OpenSoT QUIET)
-
-ycm_ep_helper(  OpenMpC
+ycm_ep_helper(  RDC2018
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/OpenMpC.git
+                REPOSITORY ADVRHumanoids/RDC2018.git
                 TAG master
                 COMPONENT external
-		DEPENDS OpenSoT
-             )
+                INSTALL_COMMAND ""
+            )

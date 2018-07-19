@@ -8,7 +8,6 @@ set(paramHelp_TAG de9f652)
 set(GazeboYARPPlugins_TAG b843248)
 set(iDynTree_TAG f0346c1)
 set(idynutils_TAG ba98bc36)
-set(OpenSoT_TAG c46cc3b409564)
 set(GYM_TAG 825a36ed7ae)
 set(fcl_TAG 54e9619bc2b)
 
@@ -65,3 +64,6 @@ set(yarp_ros_joint_state_publisher_TAG 101ddfb3c)
 
 # Vision libs
 #set(rvl_perception_TAG c10798c0e75)
+
+# External Lib
+set(rbdl_TAG 3791847)

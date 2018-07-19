@@ -3,6 +3,14 @@ cmake_minimum_required(VERSION 2.8.12)
 
 set(YCM_GIT_GITLAB_ADVRCLOUD_BASE_ADDRESS "ssh://git@gitlab.advrcloud.iit.it/" CACHE STRING "Address to use for ADVR cloud Gitlab git repositories" FORCE)
 
+set(YCM_GIT_GITLAB_ADVR_BASE_ADDRESS "ssh://git@gitlab.advr.iit.it/" CACHE STRING "Address to use for ADVR Gitlab git repositories" FORCE)
+
+
+# ---------------------
+# Compile OpenSoT
+# ---------------------
+find_or_build_package_with_tag(OpenSoT OFF)
+
 # ---------------------
 # Compile XBotInterface
 # ---------------------
@@ -11,17 +19,17 @@ find_or_build_package_with_tag(XBotInterface ON)
 # ---------------------
 # Compile srdfdom_advr
 # ---------------------
-find_or_build_package_with_tag(srdfdom_advr ON)
+find_or_build_package_with_tag(srdfdom_advr OFF)
 
 # ---------------------
 # Compile XBotCoreModel
 # ---------------------
-find_or_build_package_with_tag(XBotCoreModel ON)
+find_or_build_package_with_tag(XBotCoreModel OFF)
 
 # ------------------
 # Compile sharedlibpp
 # ------------------
-find_or_build_package_with_tag(sharedlibpp ON)
+find_or_build_package_with_tag(sharedlibpp OFF)
 
 # -------------------------
 # Compile RobotInterfaceROS
@@ -56,7 +64,7 @@ find_or_build_package_with_tag(RobotInterfaceXBotRT ON)
 # -------------------
 # Compile ADVR_shared
 # -------------------
-find_or_build_package_with_tag(ADVR_shared OFF)
+find_or_build_package_with_tag(ADVR_shared ON)
 
 # -------------------
 # Compile robot_shared
@@ -100,9 +108,9 @@ find_or_build_package_with_tag(XBotCore ON)
 # ----------------
 find_or_build_package_with_tag(XBotLogger ON)
 	
-#find_or_build_package(soem_advr)
-#find_or_build_package(walkman-master-ecat)
-#find_or_build_package(ec_master_test)
+find_or_build_package_with_tag(soem_advr OFF)
+find_or_build_package_with_tag(ecat_master_advr OFF)
+find_or_build_package_with_tag(ec_master_test OFF)
 
 # ------------------------
 # Compile GazeboXBotPlugin
@@ -123,11 +131,6 @@ find_or_build_package_with_tag(XBotYARP OFF)
 # Compile XBotGUI
 # ----------------
 find_or_build_package_with_tag(XBotGUI OFF)
-
-# ----------------
-# Compile OpenSoT-lite
-# ----------------
-find_or_build_package_with_tag(OpenSoT-lite OFF)
 
 # ----------------
 # Compile OpenMpC
@@ -190,6 +193,14 @@ find_or_build_package_with_tag(osqp OFF)
 # --------------------------------------
 find_or_build_package_with_tag(iDynTree-3 OFF)
 
+# fcl
+# --------------------------------------
+find_or_build_package_with_tag(fcl OFF)
+
 # CartesianInterface
 # --------------------------------------
 find_or_build_package_with_tag(CartesianInterface OFF)
+
+# RMLTypeII
+# --------------------------------------
+find_or_build_package_with_tag(RMLTypeII OFF)

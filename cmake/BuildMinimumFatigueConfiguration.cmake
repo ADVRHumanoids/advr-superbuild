@@ -1,16 +1,13 @@
-# QPPVM_RT_plugin
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotCore QUIET)
-find_or_build_package(OpenSoT QUIET)
 
-ycm_ep_helper(  qppvm
+ycm_ep_helper(  MinimumFatigueConfiguration
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/qppvm.git
+		REPOSITORY ADVRHumanoids/MinimumFatigueConfiguration.git
                 TAG master
                 COMPONENT external
-		DEPENDS XBotCore
-			OpenSoT
-             )
+                DEPENDS XBotCore
+            )

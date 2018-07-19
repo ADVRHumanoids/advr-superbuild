@@ -1,14 +1,13 @@
-# QPPVM_RT_plugin
+# WBC_TDE
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(OpenSoT QUIET)
+find_or_build_package(XBotCore QUIET)
 
-ycm_ep_helper(  OpenMpC
+ycm_ep_helper(  traj6d
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/OpenMpC.git
+                REPOSITORY ADVRHumanoids/traj6d.git
                 TAG master
                 COMPONENT external
-		DEPENDS OpenSoT
-             )
+                DEPENDS XBotCore)

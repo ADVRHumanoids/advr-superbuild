@@ -1,14 +1,10 @@
-# QPPVM_RT_plugin
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-find_or_build_package(OpenSoT QUIET)
-
-ycm_ep_helper(  OpenMpC
+ycm_ep_helper(  TomCentauroUDP
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/OpenMpC.git
+                REPOSITORY ADVRHumanoids/TomCentauroUDP.git
                 TAG master
                 COMPONENT external
-		DEPENDS OpenSoT
              )

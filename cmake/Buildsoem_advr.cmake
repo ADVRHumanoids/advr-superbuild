@@ -4,8 +4,8 @@ include(FindOrBuildPackage)
 
 ycm_ep_helper(  soem_advr
                 TYPE GIT
-                STYLE GITLAB_ADVRCLOUD
-                REPOSITORY amargan/soem_advr.git
+                STYLE GITLAB_ADVR
+                REPOSITORY xeno-ecat/soem_advr.git
                 TAG xeno-3
                 COMPONENT external
 		CMAKE_CACHE_ARGS -DBUILD_SHARED_LIBS:BOOL=ON
