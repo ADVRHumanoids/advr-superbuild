@@ -107,7 +107,7 @@ set(VIGIR OFF CACHE BOOL "Enable the download and usages of repos related to vig
 set(WALKMAN_EU OFF CACHE BOOL "Enable the download and usages of repos related to the WALK-MAN project")
 #playground
 set(PLAYGROUND OFF CACHE BOOL "Enable the download and usages of plaground repos")
-set(PbDlib-LIG OFF CACHE BOOL "Enable the download and usages of repos related to PbDlib-LIG")
+set(PbDlibLIG OFF CACHE BOOL "Enable the download and usages of repos related to PbDlibLIG")
 
 IF(NOT USE_ONLY_OPEN_SOURCE)
 	# set ssh connection with gitlab using rsa keys.
@@ -161,9 +161,9 @@ ENDIF(PHOLUS)
 # --------------------------------------
 # Compile related PbDlib-LIG packages
 # --------------------------------------
-IF(PbDlib-LIG)
-       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/PbDlib-LIG/CMakeLists.txt)
-ENDIF(PbDlib-LIG)
+IF(PbDlibLIG)
+        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/PbDlibLIG) #include(${CMAKE_CURRENT_SOURCE_DIR}/projects/PbDlib-LIG/CMakeLists.txt)
+ENDIF(PbDlibLIG)
 
 # --------------------------------------
 # Compile related COGIMON packages
