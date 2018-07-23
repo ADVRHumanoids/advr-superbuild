@@ -114,6 +114,8 @@ set(INAIL OFF CACHE BOOL "Enable the download and usages of INAIL related repos"
 #xbot build
 set(DEB_XBOT_BUILD OFF CACHE BOOL "Enable the download of the XBot DEB build repos")
 
+set(PbDlibLIG OFF CACHE BOOL "Enable the download and usages of repos related to PbDlibLIG")
+
 IF(NOT USE_ONLY_OPEN_SOURCE)
 	# set ssh connection with gitlab using rsa keys.
 	set(YCM_GIT_GITLAB_ROBOTOLOGY_BASE_ADDRESS "ssh://git@gitlab.robotology.eu/" CACHE STRING "Address to use for Robotology Gitlab git repositories" FORCE)
@@ -166,6 +168,13 @@ ENDIF(CENTAURO_EU)
 IF(PHOLUS)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/pholus/CMakeLists.txt)
 ENDIF(PHOLUS)
+
+# --------------------------------------
+# Compile related PbDlib-LIG packages
+# --------------------------------------
+IF(PbDlibLIG)
+        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/PbDlibLIG) #include(${CMAKE_CURRENT_SOURCE_DIR}/projects/PbDlib-LIG/CMakeLists.txt)
+ENDIF(PbDlibLIG)
 
 # --------------------------------------
 # Compile related COGIMON packages
