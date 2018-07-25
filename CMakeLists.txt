@@ -111,7 +111,10 @@ set(WALKMAN_EU OFF CACHE BOOL "Enable the download and usages of repos related t
 set(PLAYGROUND OFF CACHE BOOL "Enable the download and usages of plaground repos")
 #inail
 set(INAIL OFF CACHE BOOL "Enable the download and usages of INAIL related repos")
+#xbot build
+set(DEB_XBOT_BUILD OFF CACHE BOOL "Enable the download of the XBot DEB build repos")
 
+set(PbDlibLIG OFF CACHE BOOL "Enable the download and usages of repos related to PbDlibLIG")
 
 IF(NOT USE_ONLY_OPEN_SOURCE)
 	# set ssh connection with gitlab using rsa keys.
@@ -140,6 +143,10 @@ IF(ADVR-CORE)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/advr-core/CMakeLists.txt)
 ENDIF(ADVR-CORE)
 
+IF(DEB_XBOT_BUILD)
+       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/xbot_build/CMakeLists.txt)
+ENDIF(DEB_XBOT_BUILD)
+
 # --------------------------------------
 # Compile related PLAYGROUND packages
 # --------------------------------------
@@ -161,6 +168,13 @@ ENDIF(CENTAURO_EU)
 IF(PHOLUS)
        include(${CMAKE_CURRENT_SOURCE_DIR}/projects/pholus/CMakeLists.txt)
 ENDIF(PHOLUS)
+
+# --------------------------------------
+# Compile related PbDlib-LIG packages
+# --------------------------------------
+IF(PbDlibLIG)
+        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/PbDlibLIG) #include(${CMAKE_CURRENT_SOURCE_DIR}/projects/PbDlib-LIG/CMakeLists.txt)
+ENDIF(PbDlibLIG)
 
 # --------------------------------------
 # Compile related COGIMON packages
@@ -232,6 +246,13 @@ ENDIF(DEPRECATED_PACKAGES)
 IF(INAIL)
        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/inail)
 ENDIF(INAIL)
+
+# --------------------------------------
+# Compile related inail packages
+# --------------------------------------
+IF(TOM)
+       add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/tom)
+ENDIF(TOM)
 
 
 set_package_properties(Git PROPERTIES TYPE RUNTIME)
