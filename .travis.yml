@@ -32,7 +32,7 @@ script:
 - chmod 777 ./robotology-setup.bash
 - source ./robotology-setup.bash
 - cd /
-- source opt/ros/indigo/setup.bash
+- source opt/ros/kinetic/setup.bash
 - cd -
 - pip install catkin_pkg
 - pip install empy
