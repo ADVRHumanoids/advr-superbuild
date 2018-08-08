@@ -102,6 +102,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
        if [ -f ${ROBOTOLOGY_ROOT}/external/RobotInterfaceOROCOS/CMakeLists.txt ]; then
               pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib
               pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/RobotInterfaceOROCOS
+              pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/RobotInterfaceOROCOS
        fi
 fi
 
