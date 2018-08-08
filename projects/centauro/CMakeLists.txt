@@ -141,3 +141,8 @@ find_or_build_package_with_tag(centauro_yangwei_locomotor OFF)
 # Compile Cihan Pholus module
 # ---------------------
 find_or_build_package_with_tag(cihan_pholus OFF)
+
+# ---------------------
+# Compile Michael Pholus module
+# ---------------------
+find_or_build_package_with_tag(mcx_test OFF)
