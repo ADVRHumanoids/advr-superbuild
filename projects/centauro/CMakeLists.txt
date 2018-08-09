@@ -78,11 +78,6 @@ find_or_build_package_with_tag(traj6d OFF)
 #----------------------
 find_or_build_package_with_tag(centauroLocomotor OFF)
 
-#-----------------------
-# Controller
-#----------------------
-find_or_build_package_with_tag(Controller OFF)
-
 # --------------------------------------
 # Compile Parking_Steering
 # --------------------------------------
