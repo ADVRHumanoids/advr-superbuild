@@ -78,11 +78,6 @@ find_or_build_package_with_tag(traj6d OFF)
 #----------------------
 find_or_build_package_with_tag(centauroLocomotor OFF)
 
-#-----------------------
-# Controller
-#----------------------
-find_or_build_package_with_tag(Controller OFF)
-
 # --------------------------------------
 # Compile Parking_Steering
 # --------------------------------------
@@ -136,3 +131,13 @@ find_or_build_package_with_tag(CentauroDemo OFF)
 # Compile Yangwei Locomotion module
 # ---------------------
 find_or_build_package_with_tag(centauro_yangwei_locomotor OFF)
+
+# ---------------------
+# Compile Cihan Pholus module
+# ---------------------
+find_or_build_package_with_tag(cihan_pholus OFF)
+
+# ---------------------
+# Compile Michael Pholus module
+# ---------------------
+find_or_build_package_with_tag(mcx_test OFF)

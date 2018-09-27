@@ -35,10 +35,10 @@ ENDIF(SUPERBUILD_RSB_framework)
 # ---------------------
 set(SUPERBUILD_rtt_packages OFF CACHE BOOL "Flag to compile rtt_packages")
 IF(SUPERBUILD_rtt_packages)
-       find_or_build_package(rtt_gazebo_embedded)
-       find_or_build_package(rtt-gazebo-clock-plugin)
+       find_or_build_package_with_tag(rtt_gazebo_embedded OFF)
+       find_or_build_package_with_tag(rtt-gazebo-clock-plugin OFF)
        find_or_build_package(rtt-rrct-typekit) 
-       find_or_build_package(rtt-gazebo-robot-sim)           
+       find_or_build_package_with_tag(rtt-gazebo-robot-sim OFF)           
 ENDIF(SUPERBUILD_rtt_packages)
 
 find_or_build_package_with_tag(rtt-core-extensions OFF)
@@ -134,3 +134,5 @@ find_or_build_package_with_tag(cogimon_tools OFF)
 find_or_build_package_with_tag(XBotOrocosRTT OFF) 
 
 find_or_build_package_with_tag(RDC2018 OFF)
+
+find_or_build_package_with_tag(robot_arm_svd OFF)

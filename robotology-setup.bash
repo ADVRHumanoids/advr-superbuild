@@ -102,6 +102,7 @@ if [ -f ${ROBOTOLOGY_ROOT}/orocos_ws/install_isolated/setup.bash ]; then
        if [ -f ${ROBOTOLOGY_ROOT}/external/RobotInterfaceOROCOS/CMakeLists.txt ]; then
               pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib
               pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/gnulinux/RobotInterfaceOROCOS
+              pathadd RTT_COMPONENT_PATH $ROBOTOLOGY_ROOT/build/install/lib/orocos/xenomai/RobotInterfaceOROCOS
        fi
 fi
 
@@ -129,6 +130,7 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/icub_description
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/hyq-description
 pathadd CPATH $ROBOTOLOGY_ROOT/build/install/include
 pathadd CPATH /opt/ros/${ROS_DISTRO}/include
 pathadd PYTHONPATH $ROBOTOLOGY_ROOT/build/install/lib/python2.7/site-packages

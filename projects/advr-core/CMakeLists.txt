@@ -204,3 +204,12 @@ find_or_build_package_with_tag(CartesianInterface OFF)
 # RMLTypeII
 # --------------------------------------
 find_or_build_package_with_tag(RMLTypeII OFF)
+
+#-----------------------
+# Controller
+#----------------------
+find_or_build_package_with_tag(Controller OFF)
+
+find_or_build_package_with_tag(shared_autonomy OFF)
+
+find_or_build_package_with_tag(tango_ros_teleoperation OFF)
