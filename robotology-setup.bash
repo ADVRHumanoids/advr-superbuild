@@ -173,6 +173,11 @@ if [ -d $ROBOTOLOGY_ROOT/robots/iit-cogimon-ros-pkg ]; then
 	pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-cogimon-ros-pkg/cogimon_gazebo/database
 fi
 
+if [ -d $ROBOTOLOGY_ROOT/robots/iit-bonn-centauro-ros-pkg ]; then
+       pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-bonn-centauro-ros-pkg
+       pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-bonn-centauro-ros-pkg/bonn_centauro_gazebo/database
+fi
+
 if [ -d $ROBOTOLOGY_ROOT/external/yarp_ros_joint_state_publisher ]; then
 	pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/external/yarp_ros_joint_state_publisher
 fi
