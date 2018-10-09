@@ -124,6 +124,10 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/stacks
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/build/install/lib
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-walkman-ros-pkg/walkman_gazebo/database
+
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/reemc_robot/reemc_description
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/external/tutorial_iros2018
+
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/gazebo_models
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/external/srcsim/models
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-coman-ros-pkg
