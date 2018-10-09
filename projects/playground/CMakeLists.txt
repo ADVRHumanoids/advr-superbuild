@@ -15,3 +15,7 @@ find_or_build_package_with_tag(abb-yumi-ros-pkg OFF)
 # --------------------------------------
 find_or_build_package_with_tag(srcsim OFF)
 
+# --------------------------------------
+# Compile tutorial_iros2018
+# --------------------------------------
+find_or_build_package_with_tag(tutorial_iros2018 OFF)
