@@ -3,6 +3,7 @@ include(YCMEPHelper)
 
 find_package(roscpp QUIET)
 find_package(gazebo QUIET)
+find_package(ADVR_ROS QUIET)
 
 ycm_ep_helper(  gazebo_magnetic_attach_plugin
                 TYPE GIT
@@ -12,4 +13,5 @@ ycm_ep_helper(  gazebo_magnetic_attach_plugin
                 COMPONENT external
                 DEPENDS roscpp
                         gazebo
+			ADVR_ROS
             )
