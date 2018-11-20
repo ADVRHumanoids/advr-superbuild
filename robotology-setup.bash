@@ -135,6 +135,8 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/IITComanRosPkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/abb-yumi-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/icub_description
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/hyq-description
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-teleop-ros-pkg
+pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-teleop-ros-pkg/teleop_gazebo/database
 pathadd CPATH $ROBOTOLOGY_ROOT/build/install/include
 pathadd CPATH /opt/ros/${ROS_DISTRO}/include
 pathadd PYTHONPATH $ROBOTOLOGY_ROOT/build/install/lib/python2.7/site-packages
