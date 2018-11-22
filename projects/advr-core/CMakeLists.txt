@@ -82,3 +82,5 @@ find_or_build_package_with_tag(Controller OFF)
 find_or_build_package_with_tag(shared_autonomy OFF)
 
 find_or_build_package_with_tag(tango_ros_teleoperation OFF)
+
+find_or_build_package_with_tag(pybind11 OFF)
