@@ -15,4 +15,9 @@ find_or_build_package_with_tag(hyq-description OFF)
 # ---------------------
 find_or_build_package_with_tag(milpik_node OFF)
 
+# ---------------------
+# Compile iit-teleop-ros-pkg
+# ---------------------
+find_or_build_package_with_tag(iit-teleop-ros-pkg OFF)
+
 

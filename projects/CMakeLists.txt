@@ -35,17 +35,6 @@ find_or_build_package_with_tag(icub_description OFF)
 # Compile Gazebo YARP plugin
 find_or_build_package_with_tag(GazeboYARPPlugins OFF)
 
-# -------------------------------------------
-# Compile CAPSULE for the collision avoidance
-# -------------------------------------------
-set(SUPERBUILD_CAPSULE OFF CACHE BOOL "Flag to compile roboptim-core, moveit_compute_default_collisions, roboptim-capsule, roboptim-core-plugin-ipopt, robot_capsule_generator")
-IF(SUPERBUILD_CAPSULE)
-	find_or_build_package(roboptim-core)
-	find_or_build_package(moveit_compute_default_collisions)
-	find_or_build_package(roboptim-capsule)
-	find_or_build_package(roboptim-core-plugin-ipopt)
-	find_or_build_package(robot_capsule_generator)
-ENDIF(SUPERBUILD_CAPSULE)
 
 # --------------------------------------
 # Compile yarp_ros_joint_state_publisher
