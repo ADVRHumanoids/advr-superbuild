@@ -1,8 +1,8 @@
-# modular_plugins
+# modular
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-ycm_ep_helper(  modular_plugins
+ycm_ep_helper(  modular
                 TYPE GIT
                 STYLE GITHUB
                 REPOSITORY ADVRHumanoids/modular
