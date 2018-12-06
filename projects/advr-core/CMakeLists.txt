@@ -9,6 +9,8 @@ find_or_build_package_with_tag(OpenSoT ON)
 
 find_or_build_package_with_tag(XBotInterface ON)
 
+find_or_build_package_with_tag(xbot_msgs ON)
+
 find_or_build_package_with_tag(RobotInterfaceROS ON)
 
 find_or_build_package_with_tag(ModelInterfaceRBDL ON)
