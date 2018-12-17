@@ -20,4 +20,9 @@ find_or_build_package_with_tag(milpik_node OFF)
 # ---------------------
 find_or_build_package_with_tag(iit-teleop-ros-pkg OFF)
 
+# ---------------------
+# Compile hyqreal-description
+# ---------------------
+find_or_build_package_with_tag(hyqreal-description OFF)
+
 
