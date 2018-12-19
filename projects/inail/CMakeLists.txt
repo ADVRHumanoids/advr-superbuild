@@ -25,4 +25,13 @@ find_or_build_package_with_tag(iit-teleop-ros-pkg OFF)
 # ---------------------
 find_or_build_package_with_tag(hyqreal-description OFF)
 
+# ---------------------
+# Compile sensors-description
+# ---------------------
+find_or_build_package_with_tag(sensors-description OFF)
+
+# ---------------------
+# Compile hyqreal-description
+# ---------------------
+find_or_build_package_with_tag(iit-hyqreal-teleop-ros-pkg OFF)
 
