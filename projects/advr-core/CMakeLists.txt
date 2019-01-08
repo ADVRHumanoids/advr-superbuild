@@ -87,6 +87,8 @@ find_or_build_package_with_tag(tango_ros_teleoperation OFF)
 
 find_or_build_package_with_tag(pybind11 OFF)
 
+find_or_build_package_with_tag(MallocFinder OFF)
+
 # -------------------------------------------
 # Compile CAPSULE for the collision avoidance
 # -------------------------------------------
