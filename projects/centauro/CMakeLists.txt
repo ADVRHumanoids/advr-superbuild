@@ -125,7 +125,9 @@ find_or_build_package_with_tag(centauro_tools OFF)
 
 find_or_build_package_with_tag(WBObjectFollower OFF)
 
+
 find_or_build_package_with_tag(CentauroDemo OFF)
+find_or_build_package_with_tag(CentauroDemo2019 OFF)
 
 
 find_or_build_package_with_tag(RTSharedControlROS OFF)	
