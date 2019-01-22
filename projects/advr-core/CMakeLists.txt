@@ -9,6 +9,8 @@ find_or_build_package_with_tag(OpenSoT ON)
 
 find_or_build_package_with_tag(XBotInterface ON)
 
+find_or_build_package_with_tag(xbot_msgs ON)
+
 find_or_build_package_with_tag(RobotInterfaceROS ON)
 
 find_or_build_package_with_tag(ModelInterfaceRBDL ON)
@@ -84,6 +86,8 @@ find_or_build_package_with_tag(shared_autonomy OFF)
 find_or_build_package_with_tag(tango_ros_teleoperation OFF)
 
 find_or_build_package_with_tag(pybind11 OFF)
+
+find_or_build_package_with_tag(MallocFinder OFF)
 
 # -------------------------------------------
 # Compile CAPSULE for the collision avoidance

@@ -1,13 +1,10 @@
-# XBotInterface
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-
-ycm_ep_helper(  XBotInterface
+ycm_ep_helper(  xbot_msgs
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/XBotInterface.git
+                REPOSITORY ADVRHumanoids/xbot_msgs.git
                 TAG master
                 COMPONENT external
-		CMAKE_CACHE_ARGS -DBUILD_TESTS:BOOL=false
 	     )

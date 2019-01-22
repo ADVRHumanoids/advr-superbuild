@@ -1,13 +1,12 @@
-# XBotInterface
+# modular
 include(YCMEPHelper)
 include(FindOrBuildPackage)
 
-
-ycm_ep_helper(  XBotInterface
+ycm_ep_helper(  modular
                 TYPE GIT
                 STYLE GITHUB
-                REPOSITORY ADVRHumanoids/XBotInterface.git
+                REPOSITORY ADVRHumanoids/modular
                 TAG master
                 COMPONENT external
-		CMAKE_CACHE_ARGS -DBUILD_TESTS:BOOL=false
-	     )
+                #DEPENDS XBotCore
+            )

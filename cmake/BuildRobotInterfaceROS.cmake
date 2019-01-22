@@ -3,6 +3,7 @@ include(YCMEPHelper)
 include(FindOrBuildPackage)
 
 find_or_build_package(XBotInterface QUIET)
+find_or_build_package(xbot_msgs QUIET)
 
 ycm_ep_helper(  RobotInterfaceROS
                 TYPE GIT
@@ -11,4 +12,5 @@ ycm_ep_helper(  RobotInterfaceROS
                 TAG master
                 COMPONENT external
 		DEPENDS XBotInterface
+                        xbot_msgs
              )
