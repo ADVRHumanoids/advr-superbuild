@@ -129,6 +129,7 @@ find_or_build_package_with_tag(WBObjectFollower OFF)
 find_or_build_package_with_tag(CentauroDemo OFF)
 find_or_build_package_with_tag(CentauroDemo2019 OFF)
 
+find_or_build_package_with_tag(CentauroWheeledMotion OFF)
 
 find_or_build_package_with_tag(RTSharedControlROS OFF)	
 
@@ -147,5 +148,6 @@ find_or_build_package_with_tag(cihan_pholus OFF)
 # ---------------------
 find_or_build_package_with_tag(mcx_test OFF)
 
-
 find_or_build_package_with_tag(mpl OFF)
+
+find_or_build_package_with_tag(CentauroConfig OFF)
