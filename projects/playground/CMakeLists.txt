@@ -30,6 +30,9 @@ find_or_build_package_with_tag(dynamic_reconfigure_advr OFF)
 # --------------------------------------
 find_or_build_package_with_tag(modular_plugins OFF)
 
+
+find_or_build_package_with_tag(limit_cycle_walking OFF)
+
 # --------------------------------------
 # Compile modular
 # --------------------------------------
