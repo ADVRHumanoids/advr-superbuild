@@ -138,6 +138,8 @@ pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/hyq-description
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/hyqreal-description
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-teleop-ros-pkg
 pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/iit-hyqreal-teleop-ros-pkg
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/universal_robots/ur_description
+pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/robots/zed-ros-wrapper/zed_wrapper
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-teleop-ros-pkg/teleop_gazebo/database
 pathadd GAZEBO_MODEL_PATH $ROBOTOLOGY_ROOT/robots/iit-hyqreal-teleop-ros-pkg/hyqreal-teleop_gazebo/database
 pathadd CPATH $ROBOTOLOGY_ROOT/build/install/include

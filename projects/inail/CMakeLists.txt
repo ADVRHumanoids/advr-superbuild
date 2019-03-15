@@ -35,3 +35,8 @@ find_or_build_package_with_tag(sensors-description OFF)
 # ---------------------
 find_or_build_package_with_tag(iit-hyqreal-teleop-ros-pkg OFF)
 
+# ---------------------
+# Compile uQuadProg
+# ---------------------
+find_or_build_package_with_tag(uQuadProg OFF)
+
