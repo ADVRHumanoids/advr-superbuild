@@ -65,5 +65,3 @@ set(yarp_ros_joint_state_publisher_TAG 101ddfb3c)
 # Vision libs
 #set(rvl_perception_TAG c10798c0e75)
 
-# External Lib
-set(rbdl_TAG 3791847)
