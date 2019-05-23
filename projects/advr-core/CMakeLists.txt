@@ -77,6 +77,8 @@ find_or_build_package_with_tag(fcl OFF)
 
 find_or_build_package_with_tag(CartesianInterface ON)
 
+find_or_build_package_with_tag(cartesio_gui OFF)
+
 find_or_build_package_with_tag(RMLTypeII OFF)
 
 find_or_build_package_with_tag(Controller OFF)
