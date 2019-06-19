@@ -151,3 +151,5 @@ find_or_build_package_with_tag(mcx_test OFF)
 find_or_build_package_with_tag(mpl OFF)
 
 find_or_build_package_with_tag(CentauroConfig OFF)
+
+find_or_build_package_with_tag(contacts_opt OFF)
