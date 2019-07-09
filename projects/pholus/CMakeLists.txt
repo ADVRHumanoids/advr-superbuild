@@ -14,3 +14,8 @@ find_or_build_package_with_tag(centauro-simulator ON)
 # --------------------------
 find_or_build_package_with_tag(PholusWorkshop ON)
 
+# --------------------------
+# Compile iit-pholus-ros-pkg
+# --------------------------
+find_or_build_package_with_tag(iit-pholus-ros-pkg ON)
+
