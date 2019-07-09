@@ -9,7 +9,7 @@ set(GazeboYARPPlugins_TAG b843248)
 set(iDynTree_TAG f0346c1)
 set(idynutils_TAG ba98bc36)
 set(GYM_TAG 825a36ed7ae)
-set(fcl_TAG 54e9619bc2b)
+#set(fcl_TAG 54e9619bc2b)
 
 # COMAN
 set(comaninterface_TAG VVV15)
