@@ -19,3 +19,8 @@ find_or_build_package_with_tag(PholusWorkshop ON)
 # --------------------------
 find_or_build_package_with_tag(iit-pholus-ros-pkg ON)
 
+# --------------------------
+# Compile CentroidalPlanner
+# --------------------------
+find_or_build_package_with_tag(CentroidalPlanner OFF)
+
