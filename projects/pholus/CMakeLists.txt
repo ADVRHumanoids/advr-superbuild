@@ -24,3 +24,8 @@ find_or_build_package_with_tag(iit-pholus-ros-pkg ON)
 # --------------------------
 find_or_build_package_with_tag(CentroidalPlanner OFF)
 
+# --------------------------
+# Compile robot_inertia_publisher
+# --------------------------
+find_or_build_package_with_tag(robot_inertia_publisher ON)
+
