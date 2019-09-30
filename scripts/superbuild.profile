@@ -6,7 +6,7 @@ _superbuild_sh_complete ()
     COMPREPLY=()
     cur="${COMP_WORDS[COMP_CWORD]}"
     prev="${COMP_WORDS[COMP_CWORD-1]}"
-    opts="branch_list branch_status branch_to_push"
+    opts="branch_list branch_status branch_to_push go_to_build go_to_sources"
 
 
     COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
