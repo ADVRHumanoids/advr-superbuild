@@ -37,3 +37,13 @@ find_or_build_package_with_tag(limit_cycle_walking OFF)
 # Compile modular
 # --------------------------------------
 find_or_build_package_with_tag(modular OFF)
+
+# --------------------------------------
+# MatLogger2
+# --------------------------------------
+find_or_build_package_with_tag(MatLogger2 OFF)
+
+# --------------------------------------
+# cartesio_planning
+# --------------------------------------
+find_or_build_package_with_tag(cartesio_planning OFF)
