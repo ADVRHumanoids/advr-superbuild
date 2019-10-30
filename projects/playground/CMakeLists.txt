@@ -47,3 +47,8 @@ find_or_build_package_with_tag(MatLogger2 OFF)
 # cartesio_planning
 # --------------------------------------
 find_or_build_package_with_tag(cartesio_planning OFF)
+
+# --------------------------------------
+# casadi
+# --------------------------------------
+find_or_build_package_with_tag(casadi OFF)
