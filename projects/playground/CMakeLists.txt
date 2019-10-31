@@ -52,3 +52,8 @@ find_or_build_package_with_tag(cartesio_planning OFF)
 # casadi
 # --------------------------------------
 find_or_build_package_with_tag(casadi OFF)
+
+# --------------------------------------
+# self_collision_cartesio_addon
+# --------------------------------------
+find_or_build_package_with_tag(self_collision_cartesio_addon OFF)
