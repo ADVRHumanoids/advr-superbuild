@@ -243,6 +243,10 @@ fi
 if [ -d $ROBOTOLOGY_ROOT/external/gazebo-pkgs ]; then
         pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/external/gazebo-pkgs/gazebo_grasp_plugin
 fi
+if [ -d $ROBOTOLOGY_ROOT/network/nimbro_network ]; then
+        pathadd ROS_PACKAGE_PATH $ROBOTOLOGY_ROOT/external/network/nimbro_network
+fi
+
 
 
 export COMAN_ROOT=${ROBOTOLOGY_ROOT}/build/install
