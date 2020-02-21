@@ -295,3 +295,5 @@ else
 fi
 
 export XBOT_PATH=$LD_LIBRARY_PATH
+export BLOCKFACTORY_PLUGIN_PATH=~/devel-superbuild/build/install/lib/
+export MATLABPATH=~/devel-superbuild/build/install/mex

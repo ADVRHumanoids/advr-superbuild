@@ -116,6 +116,9 @@ set(DEB_XBOT_BUILD OFF CACHE BOOL "Enable the download of the XBot DEB build rep
 
 set(PbDlibLIG OFF CACHE BOOL "Enable the download and usages of repos related to PbDlibLIG")
 
+set(BLOCK_DIAGRAM OFF CACHE BOOL "Enable the download of Block Diagram related packages")
+
+
 IF(NOT USE_ONLY_OPEN_SOURCE)
 	# set ssh connection with gitlab using rsa keys.
 	set(YCM_GIT_GITLAB_ROBOTOLOGY_BASE_ADDRESS "ssh://git@gitlab.robotology.eu/" CACHE STRING "Address to use for Robotology Gitlab git repositories" FORCE)
@@ -254,6 +257,10 @@ IF(TOM)
        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/projects/tom)
 ENDIF(TOM)
 
+
+IF(BLOCK_DIAGRAM)
+       include(${CMAKE_CURRENT_SOURCE_DIR}/projects/block_diagram/CMakeLists.txt)
+ENDIF(BLOCK_DIAGRAM)
 
 set_package_properties(Git PROPERTIES TYPE RUNTIME)
 set_package_properties(Subversion PROPERTIES TYPE RUNTIME)
